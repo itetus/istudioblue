@@ -214,7 +214,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 context: context,
                 phone: false,
                 tablet: false,
-                tabletLandscape: false,
               ))
                 Container(
                   decoration: const BoxDecoration(),
@@ -2449,6 +2448,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 ),
               if (responsiveVisibility(
                 context: context,
+                tabletLandscape: false,
                 desktop: false,
               ))
                 Container(
@@ -2475,7 +2475,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     alignment: const AlignmentDirectional(0.0, -1.0),
                                     child: Padding(
                                       padding: const EdgeInsetsDirectional.fromSTEB(
-                                          20.0, 40.0, 20.0, 0.0),
+                                          20.0, 60.0, 20.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
                                         decoration: const BoxDecoration(),
@@ -3214,7 +3214,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     20.0,
                                                                     10.0),
                                                         child: Text(
-                                                          'Aplicativos',
+                                                          'Do conceito ao',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -3254,7 +3254,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     0.0,
                                                                     10.0),
                                                         child: Text(
-                                                          'poderosos para todas',
+                                                          'lançamento, seu app',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -3294,7 +3294,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     0.0,
                                                                     10.0),
                                                         child: Text(
-                                                          'as plataformas',
+                                                          'nas melhores mãos',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
