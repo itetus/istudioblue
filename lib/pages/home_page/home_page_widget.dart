@@ -3338,7 +3338,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               8.0),
                                                                   child: Image
                                                                       .asset(
-                                                                    'assets/images/cliente_porpino-150x150.png',
+                                                                    'assets/images/cliente_porpino.png',
                                                                     width:
                                                                         200.0,
                                                                     height:
@@ -3354,7 +3354,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               8.0),
                                                                   child: Image
                                                                       .asset(
-                                                                    'assets/images/cliente_tebrand-150x150.png',
+                                                                    'assets/images/cliente_tebrand.png',
                                                                     width:
                                                                         200.0,
                                                                     height:
@@ -3370,7 +3370,23 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               8.0),
                                                                   child: Image
                                                                       .asset(
-                                                                    'assets/images/cliente_mamp-150x150.png',
+                                                                    'assets/images/cliente_mamp.png',
+                                                                    width:
+                                                                        200.0,
+                                                                    height:
+                                                                        200.0,
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                  ),
+                                                                ),
+                                                                ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8.0),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/cliente_tetus.png',
                                                                     width:
                                                                         200.0,
                                                                     height:
