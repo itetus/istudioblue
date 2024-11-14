@@ -1,4 +1,3 @@
-import '/auth/supabase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -173,46 +172,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey('Fira Code'),
                                   ),
-                        ),
-                        Text(
-                          'login',
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Fira Code',
-                                    color: Colors.black,
-                                    fontSize: 16.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.bold,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey('Fira Code'),
-                                  ),
-                        ),
-                        InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            GoRouter.of(context).prepareAuthEvent();
-                            await authManager.signOut();
-                            GoRouter.of(context).clearRedirectLocation();
-
-                            context.goNamedAuth('HomePage', context.mounted);
-                          },
-                          child: Text(
-                            'Sair',
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Fira Code',
-                                  color: Colors.black,
-                                  fontSize: 16.0,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.bold,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey('Fira Code'),
-                                ),
-                          ),
                         ),
                         Text(
                           'Entrar em Contato',
@@ -1022,7 +981,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   color: Colors
                                                                       .white,
                                                                   fontSize:
-                                                                      96.0,
+                                                                      68.0,
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -1063,7 +1022,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   color: Colors
                                                                       .white,
                                                                   fontSize:
-                                                                      96.0,
+                                                                      68.0,
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -1112,7 +1071,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     color: Colors
                                                                         .white,
                                                                     fontSize:
-                                                                        96.0,
+                                                                        68.0,
                                                                     letterSpacing:
                                                                         0.0,
                                                                     fontWeight:
@@ -2180,7 +2139,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Jeko Demo',
-                                                        fontSize: 68.0,
+                                                        fontSize: 56.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w800,
@@ -2192,8 +2151,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                                   colors: [
                                                     FlutterFlowTheme.of(context)
+                                                        .secondary,
+                                                    FlutterFlowTheme.of(context)
                                                         .primary,
-                                                    Colors.black,
                                                     const Color(0xFF120F17)
                                                   ],
                                                   gradientDirection:
