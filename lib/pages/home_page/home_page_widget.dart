@@ -971,10 +971,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
-                                                                      40.0,
+                                                                      0.0,
                                                                       10.0),
                                                           child: Text(
-                                                            'Aplicativos',
+                                                            'Do conceito ao',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -1010,10 +1010,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
-                                                                      40.0,
+                                                                      0.0,
                                                                       10.0),
                                                           child: Text(
-                                                            'poderosos para todas',
+                                                            'lançamento, seu app',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -1057,10 +1057,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
-                                                                        40.0,
+                                                                        0.0,
                                                                         10.0),
                                                             child: Text(
-                                                              'as plataformas',
+                                                              'nas melhores mãos',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -1165,19 +1165,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                         gradient:
                                                                             LinearGradient(
                                                                           colors: [
+                                                                            FlutterFlowTheme.of(context).primary,
                                                                             Colors.black,
-                                                                            FlutterFlowTheme.of(context).primary
+                                                                            Colors.black
                                                                           ],
                                                                           stops: const [
                                                                             0.0,
-                                                                            1.0
+                                                                            0.4,
+                                                                            0.5
                                                                           ],
                                                                           begin: const AlignmentDirectional(
-                                                                              1.0,
-                                                                              0.0),
+                                                                              0.0,
+                                                                              -1.0),
                                                                           end: const AlignmentDirectional(
-                                                                              -1.0,
-                                                                              0),
+                                                                              0,
+                                                                              1.0),
                                                                         ),
                                                                         borderRadius:
                                                                             BorderRadius.circular(12.0),
@@ -1204,49 +1206,67 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     ),
                                                                   ),
                                                                   back:
-                                                                      Container(
-                                                                    width:
-                                                                        700.0,
-                                                                    height:
-                                                                        80.0,
-                                                                    decoration:
-                                                                        const BoxDecoration(
+                                                                      Material(
+                                                                    color: Colors
+                                                                        .transparent,
+                                                                    elevation:
+                                                                        1.0,
+                                                                    shape:
+                                                                        RoundedRectangleBorder(
                                                                       borderRadius:
-                                                                          BorderRadius
-                                                                              .only(
-                                                                        bottomLeft:
-                                                                            Radius.circular(12.0),
-                                                                        bottomRight:
-                                                                            Radius.circular(12.0),
-                                                                        topLeft:
-                                                                            Radius.circular(12.0),
-                                                                        topRight:
-                                                                            Radius.circular(12.0),
-                                                                      ),
+                                                                          BorderRadius.circular(
+                                                                              0.0),
                                                                     ),
                                                                     child:
-                                                                        Align(
-                                                                      alignment:
-                                                                          const AlignmentDirectional(
+                                                                        Container(
+                                                                      width:
+                                                                          700.0,
+                                                                      height:
+                                                                          80.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        boxShadow: const [
+                                                                          BoxShadow(
+                                                                            blurRadius:
+                                                                                4.0,
+                                                                            color:
+                                                                                Color(0x33000000),
+                                                                            offset:
+                                                                                Offset(
                                                                               0.0,
-                                                                              0.0),
+                                                                              2.0,
+                                                                            ),
+                                                                          )
+                                                                        ],
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(0.0),
+                                                                        border:
+                                                                            Border.all(
+                                                                          width:
+                                                                              1.0,
+                                                                        ),
+                                                                      ),
                                                                       child:
-                                                                          Padding(
-                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                            12.0,
+                                                                          Align(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
-                                                                            12.0,
                                                                             0.0),
                                                                         child:
-                                                                            Text(
-                                                                          'Analisamos suas ideias e definimos a melhor estratégia para transformar sua visão em um aplicativo de sucesso.',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Fira Code',
-                                                                                color: FlutterFlowTheme.of(context).info,
-                                                                                letterSpacing: 0.0,
-                                                                              ),
+                                                                            Padding(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                              12.0,
+                                                                              0.0,
+                                                                              12.0,
+                                                                              0.0),
+                                                                          child:
+                                                                              Text(
+                                                                            'Analisamos suas ideias e definimos a melhor estratégia para transformar sua visão em um aplicativo de sucesso.',
+                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                  fontFamily: 'Fira Code',
+                                                                                  color: FlutterFlowTheme.of(context).info,
+                                                                                  letterSpacing: 0.0,
+                                                                                ),
+                                                                          ),
                                                                         ),
                                                                       ),
                                                                     ),
@@ -1315,13 +1335,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     ),
                                                                   ),
                                                                   back:
-                                                                      Container(
-                                                                    width:
-                                                                        700.0,
-                                                                    height:
-                                                                        80.0,
-                                                                    decoration:
-                                                                        const BoxDecoration(
+                                                                      Material(
+                                                                    color: Colors
+                                                                        .transparent,
+                                                                    elevation:
+                                                                        1.0,
+                                                                    shape:
+                                                                        const RoundedRectangleBorder(
                                                                       borderRadius:
                                                                           BorderRadius
                                                                               .only(
@@ -1336,28 +1356,64 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                       ),
                                                                     ),
                                                                     child:
-                                                                        Align(
-                                                                      alignment:
-                                                                          const AlignmentDirectional(
+                                                                        Container(
+                                                                      width:
+                                                                          700.0,
+                                                                      height:
+                                                                          80.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        boxShadow: const [
+                                                                          BoxShadow(
+                                                                            blurRadius:
+                                                                                4.0,
+                                                                            color:
+                                                                                Color(0x33000000),
+                                                                            offset:
+                                                                                Offset(
                                                                               0.0,
-                                                                              0.0),
+                                                                              2.0,
+                                                                            ),
+                                                                          )
+                                                                        ],
+                                                                        borderRadius:
+                                                                            const BorderRadius.only(
+                                                                          bottomLeft:
+                                                                              Radius.circular(12.0),
+                                                                          bottomRight:
+                                                                              Radius.circular(12.0),
+                                                                          topLeft:
+                                                                              Radius.circular(12.0),
+                                                                          topRight:
+                                                                              Radius.circular(12.0),
+                                                                        ),
+                                                                        border:
+                                                                            Border.all(
+                                                                          width:
+                                                                              1.0,
+                                                                        ),
+                                                                      ),
                                                                       child:
-                                                                          Padding(
-                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                            12.0,
+                                                                          Align(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
-                                                                            12.0,
                                                                             0.0),
                                                                         child:
-                                                                            Text(
-                                                                          'Criamos uma interface atrativa e intuitiva, garantindo que o usuário tenha uma experiência memorável.',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Fira Code',
-                                                                                color: FlutterFlowTheme.of(context).info,
-                                                                                letterSpacing: 0.0,
-                                                                              ),
+                                                                            Padding(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                              12.0,
+                                                                              0.0,
+                                                                              12.0,
+                                                                              0.0),
+                                                                          child:
+                                                                              Text(
+                                                                            'Criamos uma interface atrativa e intuitiva, garantindo que o usuário tenha uma experiência memorável.',
+                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                  fontFamily: 'Fira Code',
+                                                                                  color: FlutterFlowTheme.of(context).info,
+                                                                                  letterSpacing: 0.0,
+                                                                                ),
+                                                                          ),
                                                                         ),
                                                                       ),
                                                                     ),
@@ -1426,13 +1482,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     ),
                                                                   ),
                                                                   back:
-                                                                      Container(
-                                                                    width:
-                                                                        700.0,
-                                                                    height:
-                                                                        80.0,
-                                                                    decoration:
-                                                                        const BoxDecoration(
+                                                                      Material(
+                                                                    color: Colors
+                                                                        .transparent,
+                                                                    elevation:
+                                                                        1.0,
+                                                                    shape:
+                                                                        const RoundedRectangleBorder(
                                                                       borderRadius:
                                                                           BorderRadius
                                                                               .only(
@@ -1447,28 +1503,64 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                       ),
                                                                     ),
                                                                     child:
-                                                                        Align(
-                                                                      alignment:
-                                                                          const AlignmentDirectional(
+                                                                        Container(
+                                                                      width:
+                                                                          700.0,
+                                                                      height:
+                                                                          80.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        boxShadow: const [
+                                                                          BoxShadow(
+                                                                            blurRadius:
+                                                                                4.0,
+                                                                            color:
+                                                                                Color(0x33000000),
+                                                                            offset:
+                                                                                Offset(
                                                                               0.0,
-                                                                              0.0),
+                                                                              2.0,
+                                                                            ),
+                                                                          )
+                                                                        ],
+                                                                        borderRadius:
+                                                                            const BorderRadius.only(
+                                                                          bottomLeft:
+                                                                              Radius.circular(12.0),
+                                                                          bottomRight:
+                                                                              Radius.circular(12.0),
+                                                                          topLeft:
+                                                                              Radius.circular(12.0),
+                                                                          topRight:
+                                                                              Radius.circular(12.0),
+                                                                        ),
+                                                                        border:
+                                                                            Border.all(
+                                                                          width:
+                                                                              1.0,
+                                                                        ),
+                                                                      ),
                                                                       child:
-                                                                          Padding(
-                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                            12.0,
+                                                                          Align(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
-                                                                            12.0,
                                                                             0.0),
                                                                         child:
-                                                                            Text(
-                                                                          'Com tecnologias modernas, desenvolvemos o aplicativo com foco em desempenho, estabilidade e escalabilidade.',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Fira Code',
-                                                                                color: FlutterFlowTheme.of(context).info,
-                                                                                letterSpacing: 0.0,
-                                                                              ),
+                                                                            Padding(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                              12.0,
+                                                                              0.0,
+                                                                              12.0,
+                                                                              0.0),
+                                                                          child:
+                                                                              Text(
+                                                                            'Com tecnologias modernas, desenvolvemos o aplicativo com foco em desempenho, estabilidade e escalabilidade.',
+                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                  fontFamily: 'Fira Code',
+                                                                                  color: FlutterFlowTheme.of(context).info,
+                                                                                  letterSpacing: 0.0,
+                                                                                ),
+                                                                          ),
                                                                         ),
                                                                       ),
                                                                     ),
@@ -1537,13 +1629,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     ),
                                                                   ),
                                                                   back:
-                                                                      Container(
-                                                                    width:
-                                                                        700.0,
-                                                                    height:
-                                                                        80.0,
-                                                                    decoration:
-                                                                        const BoxDecoration(
+                                                                      Material(
+                                                                    color: Colors
+                                                                        .transparent,
+                                                                    elevation:
+                                                                        1.0,
+                                                                    shape:
+                                                                        const RoundedRectangleBorder(
                                                                       borderRadius:
                                                                           BorderRadius
                                                                               .only(
@@ -1558,28 +1650,64 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                       ),
                                                                     ),
                                                                     child:
-                                                                        Align(
-                                                                      alignment:
-                                                                          const AlignmentDirectional(
+                                                                        Container(
+                                                                      width:
+                                                                          700.0,
+                                                                      height:
+                                                                          80.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        boxShadow: const [
+                                                                          BoxShadow(
+                                                                            blurRadius:
+                                                                                4.0,
+                                                                            color:
+                                                                                Color(0x33000000),
+                                                                            offset:
+                                                                                Offset(
                                                                               0.0,
-                                                                              0.0),
+                                                                              2.0,
+                                                                            ),
+                                                                          )
+                                                                        ],
+                                                                        borderRadius:
+                                                                            const BorderRadius.only(
+                                                                          bottomLeft:
+                                                                              Radius.circular(12.0),
+                                                                          bottomRight:
+                                                                              Radius.circular(12.0),
+                                                                          topLeft:
+                                                                              Radius.circular(12.0),
+                                                                          topRight:
+                                                                              Radius.circular(12.0),
+                                                                        ),
+                                                                        border:
+                                                                            Border.all(
+                                                                          width:
+                                                                              1.0,
+                                                                        ),
+                                                                      ),
                                                                       child:
-                                                                          Padding(
-                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                            12.0,
+                                                                          Align(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
-                                                                            12.0,
                                                                             0.0),
                                                                         child:
-                                                                            Text(
-                                                                          'Realizamos testes rigorosos para garantir que cada funcionalidade funcione perfeitamente, antes do lançamento.',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Fira Code',
-                                                                                color: FlutterFlowTheme.of(context).info,
-                                                                                letterSpacing: 0.0,
-                                                                              ),
+                                                                            Padding(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                              12.0,
+                                                                              0.0,
+                                                                              12.0,
+                                                                              0.0),
+                                                                          child:
+                                                                              Text(
+                                                                            'Realizamos testes rigorosos para garantir que cada funcionalidade funcione perfeitamente, antes do lançamento.',
+                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                  fontFamily: 'Fira Code',
+                                                                                  color: FlutterFlowTheme.of(context).info,
+                                                                                  letterSpacing: 0.0,
+                                                                                ),
+                                                                          ),
                                                                         ),
                                                                       ),
                                                                     ),
@@ -1643,13 +1771,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     ),
                                                                   ),
                                                                   back:
-                                                                      Container(
-                                                                    width:
-                                                                        700.0,
-                                                                    height:
-                                                                        80.0,
-                                                                    decoration:
-                                                                        const BoxDecoration(
+                                                                      Material(
+                                                                    color: Colors
+                                                                        .transparent,
+                                                                    elevation:
+                                                                        1.0,
+                                                                    shape:
+                                                                        const RoundedRectangleBorder(
                                                                       borderRadius:
                                                                           BorderRadius
                                                                               .only(
@@ -1664,28 +1792,64 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                       ),
                                                                     ),
                                                                     child:
-                                                                        Align(
-                                                                      alignment:
-                                                                          const AlignmentDirectional(
+                                                                        Container(
+                                                                      width:
+                                                                          700.0,
+                                                                      height:
+                                                                          80.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        boxShadow: const [
+                                                                          BoxShadow(
+                                                                            blurRadius:
+                                                                                4.0,
+                                                                            color:
+                                                                                Color(0x33000000),
+                                                                            offset:
+                                                                                Offset(
                                                                               0.0,
-                                                                              0.0),
+                                                                              2.0,
+                                                                            ),
+                                                                          )
+                                                                        ],
+                                                                        borderRadius:
+                                                                            const BorderRadius.only(
+                                                                          bottomLeft:
+                                                                              Radius.circular(12.0),
+                                                                          bottomRight:
+                                                                              Radius.circular(12.0),
+                                                                          topLeft:
+                                                                              Radius.circular(12.0),
+                                                                          topRight:
+                                                                              Radius.circular(12.0),
+                                                                        ),
+                                                                        border:
+                                                                            Border.all(
+                                                                          width:
+                                                                              1.0,
+                                                                        ),
+                                                                      ),
                                                                       child:
-                                                                          Padding(
-                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                            12.0,
+                                                                          Align(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
-                                                                            12.0,
                                                                             0.0),
                                                                         child:
-                                                                            Text(
-                                                                          'Lançamos seu app e oferecemos suporte contínuo para acompanhar seu crescimento e garantir a melhor performance.',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Fira Code',
-                                                                                color: FlutterFlowTheme.of(context).info,
-                                                                                letterSpacing: 0.0,
-                                                                              ),
+                                                                            Padding(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                              12.0,
+                                                                              0.0,
+                                                                              12.0,
+                                                                              0.0),
+                                                                          child:
+                                                                              Text(
+                                                                            'Lançamos seu app e oferecemos suporte contínuo para acompanhar seu crescimento e garantir a melhor performance.',
+                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                  fontFamily: 'Fira Code',
+                                                                                  color: FlutterFlowTheme.of(context).info,
+                                                                                  letterSpacing: 0.0,
+                                                                                ),
+                                                                          ),
                                                                         ),
                                                                       ),
                                                                     ),
