@@ -158,7 +158,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 40.0, 0.0, 0.0),
                                     child: Container(
-                                      width: 800.0,
+                                      width: 1200.0,
                                       decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -211,13 +211,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   decoration: const BoxDecoration(),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Align(
                                         alignment:
                                             const AlignmentDirectional(0.0, -1.0),
                                         child: Container(
-                                          width: 900.0,
+                                          width: 1250.0,
                                           height: 740.0,
                                           decoration: const BoxDecoration(),
                                           child: Column(
@@ -227,25 +227,29 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Text(
-                                                'Transformando ideias digitais em resultados reais',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Fira Code',
-                                                          color: Colors.black,
-                                                          fontSize: 16.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
+                                              Padding(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        30.0, 0.0, 0.0, 0.0),
+                                                child: Text(
+                                                  'Transformando ideias digitais em resultados reais',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Fira Code',
+                                                        color: Colors.black,
+                                                        fontSize: 16.0,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.w500,
+                                                      ),
+                                                ),
                                               ),
                                               Padding(
                                                 padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
-                                                        0.0, 0.0, 100.0, 20.0),
+                                                        30.0, 0.0, 300.0, 20.0),
                                                 child: GradientText(
                                                   'Aplicativos que fazem a diferença',
                                                   style: FlutterFlowTheme.of(
@@ -274,149 +278,73 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               ),
                                               Container(
                                                 decoration: const BoxDecoration(),
-                                                child: Stack(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  children: [
-                                                    Container(
-                                                      width: 80.0,
-                                                      height: 80.0,
-                                                      decoration: BoxDecoration(
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(
-                                                                    100.0),
-                                                        border: Border.all(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primary,
-                                                          width: 1.0,
-                                                        ),
-                                                      ),
-                                                      child: Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                0.0, 0.0),
-                                                        child: Container(
-                                                          width: 40.0,
-                                                          height: 40.0,
-                                                          decoration:
-                                                              BoxDecoration(
+                                                child: Padding(
+                                                  padding: const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          30.0, 0.0, 0.0, 0.0),
+                                                  child: Stack(
+                                                    alignment:
+                                                        const AlignmentDirectional(
+                                                            -1.0, 0.0),
+                                                    children: [
+                                                      Container(
+                                                        width: 80.0,
+                                                        height: 80.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      100.0),
+                                                          border: Border.all(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .primary,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        100.0),
+                                                            width: 1.0,
                                                           ),
-                                                          child: const Icon(
-                                                            Icons.arrow_outward,
+                                                        ),
+                                                        child: Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: Container(
+                                                            width: 40.0,
+                                                            height: 40.0,
+                                                            decoration:
+                                                                BoxDecoration(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .primary,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          100.0),
+                                                            ),
+                                                            child: const Icon(
+                                                              Icons
+                                                                  .arrow_outward,
+                                                              color:
+                                                                  Colors.white,
+                                                              size: 24.0,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                -0.81, 0.11),
+                                                        child: Container(
+                                                          decoration:
+                                                              const BoxDecoration(
                                                             color: Colors.white,
-                                                            size: 24.0,
                                                           ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                    Align(
-                                                      alignment:
-                                                          const AlignmentDirectional(
-                                                              -0.81, 0.11),
-                                                      child: Container(
-                                                        decoration:
-                                                            const BoxDecoration(
-                                                          color: Colors.white,
-                                                        ),
-                                                        child: Padding(
-                                                          padding:
-                                                              const EdgeInsets.all(
-                                                                  12.0),
-                                                          child: Text(
-                                                            'Saiba Mais',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Fira Code',
-                                                                  color: Colors
-                                                                      .black,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w600,
-                                                                ),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            const AlignmentDirectional(1.0, 0.0),
-                                        child: Container(
-                                          width: 540.0,
-                                          decoration: const BoxDecoration(),
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(0.0),
-                                                child: Image.asset(
-                                                  'assets/images/background.png',
-                                                  width: 543.0,
-                                                  fit: BoxFit.cover,
-                                                ),
-                                              ),
-                                              Expanded(
-                                                child: Container(
-                                                  width: double.infinity,
-                                                  decoration: BoxDecoration(
-                                                    gradient: LinearGradient(
-                                                      colors: [
-                                                        Colors.black,
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primary
-                                                      ],
-                                                      stops: const [0.0, 1.0],
-                                                      begin:
-                                                          const AlignmentDirectional(
-                                                              0.64, -1.0),
-                                                      end: const AlignmentDirectional(
-                                                          -0.64, 1.0),
-                                                    ),
-                                                  ),
-                                                  child: Padding(
-                                                    padding:
-                                                        const EdgeInsets.all(25.0),
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        Flexible(
                                                           child: Padding(
                                                             padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        20.0,
-                                                                        0.0),
+                                                                const EdgeInsets.all(
+                                                                    12.0),
                                                             child: Text(
-                                                              'Criamos aplicativos inovadores para iOS, Android e Web que vão além de atender às necessidades do seu negócio – eles impulsionam resultados. \n',
+                                                              'Saiba Mais',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -424,27 +352,18 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Fira Code',
                                                                     color: Colors
-                                                                        .white,
-                                                                    fontSize:
-                                                                        16.0,
+                                                                        .black,
                                                                     letterSpacing:
                                                                         0.0,
                                                                     fontWeight:
                                                                         FontWeight
-                                                                            .normal,
-                                                                    lineHeight:
-                                                                        1.5,
+                                                                            .w600,
                                                                   ),
                                                             ),
                                                           ),
                                                         ),
-                                                        const Icon(
-                                                          Icons.arrow_outward,
-                                                          color: Colors.white,
-                                                          size: 40.0,
-                                                        ),
-                                                      ],
-                                                    ),
+                                                      ),
+                                                    ],
                                                   ),
                                                 ),
                                               ),
@@ -496,45 +415,50 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Container(
                                           width: 100.0,
                                           decoration: const BoxDecoration(),
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.max,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                '1.1 M',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Fira Code',
-                                                          fontSize: 20.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
-                                              ),
-                                              Text(
-                                                'Usuários Ativos',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Fira Code',
-                                                      color: const Color(0x6614181B),
-                                                      fontSize: 12.0,
-                                                      letterSpacing: 0.0,
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                    ),
-                                              ),
-                                            ],
+                                          child: Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    10.0, 0.0, 0.0, 0.0),
+                                            child: Column(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  '1.1 M',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Fira Code',
+                                                        fontSize: 20.0,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                ),
+                                                Text(
+                                                  'Usuários Ativos',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Fira Code',
+                                                        color:
+                                                            const Color(0x6614181B),
+                                                        fontSize: 12.0,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                      ),
+                                                ),
+                                              ],
+                                            ),
                                           ),
                                         ),
-                                      ].divide(const SizedBox(width: 20.0)),
+                                      ].divide(const SizedBox(width: 2.0)),
                                     ),
                                   ),
                                 ),
@@ -656,7 +580,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                         0.0,
                                                                         10.0),
                                                             child: Text(
-                                                              'Aplicativos  Mobile (iOS e Android)',
+                                                              ' Mobile (iOS e Android)',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -730,7 +654,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                         0.0,
                                                                         10.0),
                                                             child: Text(
-                                                              'Aplicativos Web',
+                                                              ' Web',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -2731,7 +2655,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               children: [
                                                 Expanded(
                                                   child: Container(
-                                                    width: 300.0,
+                                                    width: 320.0,
                                                     height: 370.0,
                                                     decoration: BoxDecoration(
                                                       color: const Color(0x1BFFFFFF),
@@ -2758,7 +2682,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                         0.0,
                                                                         10.0),
                                                             child: Text(
-                                                              'Aplicativos  Mobile (iOS e Android)',
+                                                              ' Mobile (iOS/Android)',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -2832,7 +2756,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                         0.0,
                                                                         10.0),
                                                             child: Text(
-                                                              'Aplicativos Web',
+                                                              'Web',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
