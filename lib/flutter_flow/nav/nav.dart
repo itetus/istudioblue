@@ -35,7 +35,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 color: Colors.transparent,
                 child: Image.asset(
                   'assets/images/LOGO_iStudioblue_2X1_400.png',
-                  fit: BoxFit.fitWidth,
+                  fit: BoxFit.none,
                 ),
               ),
             )
@@ -50,7 +50,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                     color: Colors.transparent,
                     child: Image.asset(
                       'assets/images/LOGO_iStudioblue_2X1_400.png',
-                      fit: BoxFit.fitWidth,
+                      fit: BoxFit.none,
                     ),
                   ),
                 )
