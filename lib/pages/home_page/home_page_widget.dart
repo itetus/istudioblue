@@ -2354,7 +2354,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           children: [
                             Container(
                               width: double.infinity,
-                              height: MediaQuery.sizeOf(context).height * 0.785,
                               decoration: const BoxDecoration(),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -2660,72 +2659,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               ),
                                             ),
                                           ),
-                                          Expanded(
-                                            child: Container(
-                                              width: double.infinity,
-                                              decoration: BoxDecoration(
-                                                gradient: LinearGradient(
-                                                  colors: [
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryText,
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary
-                                                  ],
-                                                  stops: const [0.0, 1.0],
-                                                  begin: const AlignmentDirectional(
-                                                      0.64, -1.0),
-                                                  end: const AlignmentDirectional(
-                                                      -0.64, 1.0),
-                                                ),
-                                              ),
-                                              child: Padding(
-                                                padding: const EdgeInsets.all(25.0),
-                                                child: Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    Flexible(
-                                                      child: Padding(
-                                                        padding:
-                                                            const EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    0.0,
-                                                                    20.0,
-                                                                    0.0),
-                                                        child: Text(
-                                                          'Criamos aplicativos inovadores para iOS, Android e Web que vão além de atender às necessidades do seu negócio – eles impulsionam resultados. ',
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Fira Code',
-                                                                color: Colors
-                                                                    .white,
-                                                                fontSize: 12.0,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w500,
-                                                                lineHeight: 1.2,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                    const Icon(
-                                                      Icons.arrow_outward,
-                                                      color: Colors.white,
-                                                      size: 24.0,
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          ),
                                         ],
                                       ),
                                     ),
@@ -2761,7 +2694,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 50.0, 0.0, 0.0),
                                     child: Container(
-                                      width: 1250.0,
                                       decoration: const BoxDecoration(),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
