@@ -2321,7 +2321,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                           onPressed: () async {
                                                             await launchURL(
-                                                                'https://wa.me/+5511963611000');
+                                                                'https://wa.me/+18644695291');
                                                           },
                                                         ),
                                                       ),
@@ -3770,7 +3770,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   onPressed:
                                                                       () async {
                                                                     await launchURL(
-                                                                        'https://wa.me/+5511963611000');
+                                                                        'https://wa.me/+18644695291');
                                                                   },
                                                                 ),
                                                               ),
