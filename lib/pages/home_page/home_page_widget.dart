@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flip_card/flip_card.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -693,8 +694,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   ),
                                                             ),
                                                           ),
-                                                          Text(
+                                                          AutoSizeText(
                                                             'Nossos aplicativos para iOS e Android são projetados para engajar e converter. Cuidamos de cada detalhe, da interface à funcionalidade, para garantir que o aplicativo reflita o potencial do seu negócio. De ideias complexas a aplicativos simples e intuitivos, trazemos seu projeto à vida com desempenho e design excepcionais.',
+                                                            minFontSize: 12.0,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -773,8 +775,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   ),
                                                             ),
                                                           ),
-                                                          Text(
+                                                          AutoSizeText(
                                                             'Ofereça uma experiência digital completa com nossos aplicativos web, feitos para funcionar em qualquer dispositivo. Desenvolvemos aplicações web rápidas, responsivas e personalizadas para entregar o que sua audiência precisa, onde quer que ela esteja.',
+                                                            minFontSize: 12.0,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -853,8 +856,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   ),
                                                             ),
                                                           ),
-                                                          Text(
+                                                          AutoSizeText(
                                                             'Criamos interfaces que encantam e engajam, valorizando cada interação do usuário. Nossos designs foca',
+                                                            minFontSize: 12.0,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -908,8 +912,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   ),
                                                             ),
                                                           ),
-                                                          Text(
+                                                          AutoSizeText(
                                                             'Apoie o sucesso do seu aplicativo com estratégias de tráfego pago, atraindo seu público-alvo com campanhas eficazes e otimizadas para conversão.',
+                                                            minFontSize: 12.0,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -964,8 +969,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       0.0,
                                                                       0.0,
                                                                       10.0),
-                                                          child: Text(
+                                                          child: AutoSizeText(
                                                             'Do conceito ao',
+                                                            minFontSize: 36.0,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -1005,8 +1011,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       0.0,
                                                                       0.0,
                                                                       10.0),
-                                                          child: Text(
+                                                          child: AutoSizeText(
                                                             'lançamento, seu app',
+                                                            minFontSize: 36.0,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -1046,8 +1053,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       0.0,
                                                                       0.0,
                                                                       10.0),
-                                                          child: Text(
+                                                          child: AutoSizeText(
                                                             'nas melhores mãos',
+                                                            minFontSize: 36.0,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -2207,26 +2215,72 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
-                                                  Icon(
-                                                    Icons.facebook,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    size: 24.0,
+                                                  InkWell(
+                                                    splashColor:
+                                                        Colors.transparent,
+                                                    focusColor:
+                                                        Colors.transparent,
+                                                    hoverColor:
+                                                        Colors.transparent,
+                                                    highlightColor:
+                                                        Colors.transparent,
+                                                    onTap: () async {
+                                                      await launchURL(
+                                                          'https://www.facebook.com/istudioblue');
+                                                    },
+                                                    child: Icon(
+                                                      Icons.facebook,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                      size: 24.0,
+                                                    ),
                                                   ),
-                                                  FaIcon(
-                                                    FontAwesomeIcons.instagram,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    size: 24.0,
+                                                  InkWell(
+                                                    splashColor:
+                                                        Colors.transparent,
+                                                    focusColor:
+                                                        Colors.transparent,
+                                                    hoverColor:
+                                                        Colors.transparent,
+                                                    highlightColor:
+                                                        Colors.transparent,
+                                                    onTap: () async {
+                                                      await launchURL(
+                                                          'https://www.instagram.com/istudioblue');
+                                                    },
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons
+                                                          .instagram,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                      size: 24.0,
+                                                    ),
                                                   ),
-                                                  FaIcon(
-                                                    FontAwesomeIcons.whatsapp,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    size: 24.0,
+                                                  InkWell(
+                                                    splashColor:
+                                                        Colors.transparent,
+                                                    focusColor:
+                                                        Colors.transparent,
+                                                    hoverColor:
+                                                        Colors.transparent,
+                                                    highlightColor:
+                                                        Colors.transparent,
+                                                    onTap: () async {
+                                                      await launchURL(
+                                                          'https://wa.me/+18644695291');
+                                                    },
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons.whatsapp,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                      size: 24.0,
+                                                    ),
                                                   ),
                                                 ].divide(const SizedBox(width: 20.0)),
                                               ),
@@ -2342,6 +2396,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 fontFamily: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMediumFamily,
+                                                                color: Colors
+                                                                    .black,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 useGoogleFonts: GoogleFonts
@@ -2399,20 +2455,50 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
-                                          const FaIcon(
-                                            FontAwesomeIcons.facebookF,
-                                            color: Colors.black,
-                                            size: 22.0,
+                                          InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              await launchURL(
+                                                  'https://www.facebook.com/istudioblue');
+                                            },
+                                            child: const FaIcon(
+                                              FontAwesomeIcons.facebookF,
+                                              color: Colors.black,
+                                              size: 22.0,
+                                            ),
                                           ),
-                                          const FaIcon(
-                                            FontAwesomeIcons.instagram,
-                                            color: Colors.black,
-                                            size: 22.0,
+                                          InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              await launchURL(
+                                                  'https://www.instagram.com/istudioblue');
+                                            },
+                                            child: const FaIcon(
+                                              FontAwesomeIcons.instagram,
+                                              color: Colors.black,
+                                              size: 22.0,
+                                            ),
                                           ),
-                                          const FaIcon(
-                                            FontAwesomeIcons.whatsapp,
-                                            color: Colors.black,
-                                            size: 22.0,
+                                          InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              await launchURL(
+                                                  'https://wa.me/+18644695291');
+                                            },
+                                            child: const FaIcon(
+                                              FontAwesomeIcons.whatsapp,
+                                              color: Colors.black,
+                                              size: 22.0,
+                                            ),
                                           ),
                                         ].divide(const SizedBox(width: 20.0)),
                                       ),
@@ -3389,7 +3475,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     0.0,
                                                                     10.0),
                                                         child: Text(
-                                                          'nas melhores mãos',
+                                                          'nas melhores mãos.',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -3638,23 +3724,65 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     mainAxisSize:
                                                         MainAxisSize.max,
                                                     children: [
-                                                      const FaIcon(
-                                                        FontAwesomeIcons
-                                                            .facebookF,
-                                                        color: Colors.black,
-                                                        size: 20.0,
+                                                      InkWell(
+                                                        splashColor:
+                                                            Colors.transparent,
+                                                        focusColor:
+                                                            Colors.transparent,
+                                                        hoverColor:
+                                                            Colors.transparent,
+                                                        highlightColor:
+                                                            Colors.transparent,
+                                                        onTap: () async {
+                                                          await launchURL(
+                                                              'https://www.facebook.com/istudioblue');
+                                                        },
+                                                        child: const FaIcon(
+                                                          FontAwesomeIcons
+                                                              .facebookF,
+                                                          color: Colors.black,
+                                                          size: 20.0,
+                                                        ),
                                                       ),
-                                                      const FaIcon(
-                                                        FontAwesomeIcons
-                                                            .instagram,
-                                                        color: Colors.black,
-                                                        size: 20.0,
+                                                      InkWell(
+                                                        splashColor:
+                                                            Colors.transparent,
+                                                        focusColor:
+                                                            Colors.transparent,
+                                                        hoverColor:
+                                                            Colors.transparent,
+                                                        highlightColor:
+                                                            Colors.transparent,
+                                                        onTap: () async {
+                                                          await launchURL(
+                                                              'https://www.instagram.com/istudioblue');
+                                                        },
+                                                        child: const FaIcon(
+                                                          FontAwesomeIcons
+                                                              .instagram,
+                                                          color: Colors.black,
+                                                          size: 20.0,
+                                                        ),
                                                       ),
-                                                      const FaIcon(
-                                                        FontAwesomeIcons
-                                                            .whatsapp,
-                                                        color: Colors.black,
-                                                        size: 20.0,
+                                                      InkWell(
+                                                        splashColor:
+                                                            Colors.transparent,
+                                                        focusColor:
+                                                            Colors.transparent,
+                                                        hoverColor:
+                                                            Colors.transparent,
+                                                        highlightColor:
+                                                            Colors.transparent,
+                                                        onTap: () async {
+                                                          await launchURL(
+                                                              'https://wa.me/+18644695291');
+                                                        },
+                                                        child: const FaIcon(
+                                                          FontAwesomeIcons
+                                                              .whatsapp,
+                                                          color: Colors.black,
+                                                          size: 20.0,
+                                                        ),
                                                       ),
                                                     ].divide(
                                                         const SizedBox(width: 20.0)),
@@ -3672,7 +3800,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         .override(
                                                           fontFamily:
                                                               'Jeko Demo',
-                                                          fontSize: 32.0,
+                                                          color: Colors.black,
+                                                          fontSize: 30.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w800,
@@ -3790,6 +3919,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       .override(
                                                                         fontFamily:
                                                                             FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                        color: Colors
+                                                                            .black,
                                                                         letterSpacing:
                                                                             0.0,
                                                                         useGoogleFonts:
@@ -3854,20 +3985,50 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        const FaIcon(
-                                          FontAwesomeIcons.facebookF,
-                                          color: Colors.black,
-                                          size: 22.0,
+                                        InkWell(
+                                          splashColor: Colors.transparent,
+                                          focusColor: Colors.transparent,
+                                          hoverColor: Colors.transparent,
+                                          highlightColor: Colors.transparent,
+                                          onTap: () async {
+                                            await launchURL(
+                                                'https://www.facebook.com/istudioblue');
+                                          },
+                                          child: const FaIcon(
+                                            FontAwesomeIcons.facebookF,
+                                            color: Colors.black,
+                                            size: 22.0,
+                                          ),
                                         ),
-                                        const FaIcon(
-                                          FontAwesomeIcons.instagram,
-                                          color: Colors.black,
-                                          size: 22.0,
+                                        InkWell(
+                                          splashColor: Colors.transparent,
+                                          focusColor: Colors.transparent,
+                                          hoverColor: Colors.transparent,
+                                          highlightColor: Colors.transparent,
+                                          onTap: () async {
+                                            await launchURL(
+                                                'https://www.instagram.com/istudioblue');
+                                          },
+                                          child: const FaIcon(
+                                            FontAwesomeIcons.instagram,
+                                            color: Colors.black,
+                                            size: 22.0,
+                                          ),
                                         ),
-                                        const FaIcon(
-                                          FontAwesomeIcons.whatsapp,
-                                          color: Colors.black,
-                                          size: 22.0,
+                                        InkWell(
+                                          splashColor: Colors.transparent,
+                                          focusColor: Colors.transparent,
+                                          hoverColor: Colors.transparent,
+                                          highlightColor: Colors.transparent,
+                                          onTap: () async {
+                                            await launchURL(
+                                                'https://wa.me/+18644695291');
+                                          },
+                                          child: const FaIcon(
+                                            FontAwesomeIcons.whatsapp,
+                                            color: Colors.black,
+                                            size: 22.0,
+                                          ),
                                         ),
                                       ].divide(const SizedBox(width: 20.0)),
                                     ),
