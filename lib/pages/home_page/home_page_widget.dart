@@ -186,6 +186,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ),
         body: SingleChildScrollView(
+          controller: _model.columnController1,
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -198,6 +199,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   decoration: const BoxDecoration(),
                   child: SingleChildScrollView(
                     primary: false,
+                    controller: _model.columnController2,
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -2529,92 +2531,113 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     0.0, 1.0),
                                                 child: Container(
                                                   decoration: const BoxDecoration(),
-                                                  child: Stack(
-                                                    alignment:
-                                                        const AlignmentDirectional(
-                                                            -1.0, 0.0),
-                                                    children: [
-                                                      Container(
-                                                        width: 80.0,
-                                                        height: 80.0,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      100.0),
-                                                          border: Border.all(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primary,
-                                                            width: 1.0,
-                                                          ),
-                                                        ),
-                                                        child: Align(
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Container(
-                                                            width: 40.0,
-                                                            height: 40.0,
-                                                            decoration:
-                                                                BoxDecoration(
+                                                  child: InkWell(
+                                                    splashColor:
+                                                        Colors.transparent,
+                                                    focusColor:
+                                                        Colors.transparent,
+                                                    hoverColor:
+                                                        Colors.transparent,
+                                                    highlightColor:
+                                                        Colors.transparent,
+                                                    onTap: () async {
+                                                      await _model.rowController
+                                                          ?.animateTo(
+                                                        0,
+                                                        duration: const Duration(
+                                                            milliseconds: 100),
+                                                        curve: Curves.ease,
+                                                      );
+                                                    },
+                                                    child: Stack(
+                                                      alignment:
+                                                          const AlignmentDirectional(
+                                                              -1.0, 0.0),
+                                                      children: [
+                                                        Container(
+                                                          width: 80.0,
+                                                          height: 80.0,
+                                                          decoration:
+                                                              BoxDecoration(
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        100.0),
+                                                            border: Border.all(
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .primary,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          100.0),
+                                                              width: 1.0,
                                                             ),
-                                                            child: const Icon(
-                                                              Icons
-                                                                  .arrow_outward,
+                                                          ),
+                                                          child: Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Container(
+                                                              width: 40.0,
+                                                              height: 40.0,
+                                                              decoration:
+                                                                  BoxDecoration(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            100.0),
+                                                              ),
+                                                              child: const Icon(
+                                                                Icons
+                                                                    .arrow_outward,
+                                                                color: Colors
+                                                                    .white,
+                                                                size: 24.0,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  -0.5, -0.07),
+                                                          child: Container(
+                                                            decoration:
+                                                                const BoxDecoration(
                                                               color:
                                                                   Colors.white,
-                                                              size: 24.0,
+                                                            ),
+                                                            child: Padding(
+                                                              padding:
+                                                                  const EdgeInsets
+                                                                      .all(
+                                                                          12.0),
+                                                              child: Text(
+                                                                'Saiba Mais',
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Fira Code',
+                                                                      color: Colors
+                                                                          .black,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w600,
+                                                                      useGoogleFonts: GoogleFonts
+                                                                              .asMap()
+                                                                          .containsKey(
+                                                                              'Fira Code'),
+                                                                    ),
+                                                              ),
                                                             ),
                                                           ),
                                                         ),
-                                                      ),
-                                                      Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                -0.5, -0.07),
-                                                        child: Container(
-                                                          decoration:
-                                                              const BoxDecoration(
-                                                            color: Colors.white,
-                                                          ),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsets.all(
-                                                                    12.0),
-                                                            child: Text(
-                                                              'Saiba Mais',
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        'Fira Code',
-                                                                    color: Colors
-                                                                        .black,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .w600,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            'Fira Code'),
-                                                                  ),
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ],
+                                                      ],
+                                                    ),
                                                   ),
                                                 ),
                                               ),
@@ -2834,6 +2857,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           ),
                                           SingleChildScrollView(
                                             scrollDirection: Axis.horizontal,
+                                            controller: _model.rowController,
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
@@ -3501,86 +3525,79 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         const AlignmentDirectional(
                                                             -1.0, 0.0),
                                                     children: [
-                                                      Container(
-                                                        width: 80.0,
-                                                        height: 80.0,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      100.0),
-                                                          border: Border.all(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primary,
-                                                            width: 1.0,
-                                                          ),
-                                                        ),
-                                                        child: Align(
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Container(
-                                                            width: 40.0,
-                                                            height: 40.0,
-                                                            decoration:
-                                                                BoxDecoration(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          100.0),
-                                                            ),
-                                                            child: const Icon(
-                                                              Icons
-                                                                  .arrow_outward,
-                                                              color:
-                                                                  Colors.white,
-                                                              size: 24.0,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                      Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                -0.5, 0.0),
-                                                        child: Container(
-                                                          decoration:
-                                                              const BoxDecoration(
-                                                            color: Colors.white,
-                                                          ),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsets.all(
-                                                                    12.0),
-                                                            child: Text(
-                                                              'Saiba Mais',
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
-                                                                    color: Colors
-                                                                        .black,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .w600,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                      Row(
+                                                        mainAxisSize:
+                                                            MainAxisSize.max,
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .center,
+                                                        children: [
+                                                          Row(
+                                                            mainAxisSize:
+                                                                MainAxisSize
+                                                                    .max,
+                                                            children: [
+                                                              Container(
+                                                                width: 80.0,
+                                                                height: 80.0,
+                                                                decoration:
+                                                                    BoxDecoration(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .success,
+                                                                  shape: BoxShape
+                                                                      .circle,
+                                                                ),
+                                                                child:
+                                                                    FlutterFlowIconButton(
+                                                                  borderColor:
+                                                                      Colors
+                                                                          .transparent,
+                                                                  borderRadius:
+                                                                      8.0,
+                                                                  buttonSize:
+                                                                      40.0,
+                                                                  icon: FaIcon(
+                                                                    FontAwesomeIcons
+                                                                        .whatsapp,
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .info,
+                                                                    size: 60.0,
                                                                   ),
-                                                            ),
+                                                                  onPressed:
+                                                                      () async {
+                                                                    await launchURL(
+                                                                        'https://wa.me/+5511963611000');
+                                                                  },
+                                                                ),
+                                                              ),
+                                                              Padding(
+                                                                padding:
+                                                                    const EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            16.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                child: Text(
+                                                                  'WhatsApp',
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        useGoogleFonts:
+                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                      ),
+                                                                ),
+                                                              ),
+                                                            ],
                                                           ),
-                                                        ),
+                                                        ],
                                                       ),
                                                     ],
                                                   ),
