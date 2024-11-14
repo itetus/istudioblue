@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
@@ -1093,13 +1094,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
-                                                  ClipRRect(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            8.0),
-                                                    child: Image.asset(
-                                                      'assets/images/th.jpeg',
-                                                      fit: BoxFit.cover,
+                                                  Opacity(
+                                                    opacity: 0.5,
+                                                    child: ClipRRect(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              8.0),
+                                                      child: Image.asset(
+                                                        'assets/images/th.jpeg',
+                                                        fit: BoxFit.cover,
+                                                      ),
                                                     ),
                                                   ),
                                                   Expanded(
@@ -1129,114 +1133,566 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                         0.0,
                                                                         0.0,
                                                                         0.0,
-                                                                        20.0),
-                                                            child: Text(
-                                                              'Planejamento: “Analisamos suas ideias e definimos a melhor estratégia para transformar sua visão em um aplicativo de sucesso.”\nDesign: “Criamos uma interface atrativa e intuitiva, garantindo que o usuário tenha uma experiência memorável.”\nDesenvolvimento: “Com tecnologias modernas, desenvolvemos o aplicativo com foco em desempenho, estabilidade e escalabilidade.”\nTestes: “Realizamos testes rigorosos para garantir que cada funcionalidade funcione perfeitamente, antes do lançamento.”\nLançamento e Suporte: “Lançamos seu app e oferecemos suporte contínuo para acompanhar seu crescimento e garantir a melhor performance.”\n',
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        'Fira Code',
-                                                                    color: Colors
-                                                                        .white,
-                                                                    fontSize:
-                                                                        15.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    lineHeight:
-                                                                        1.8,
+                                                                        12.0),
+                                                            child: Column(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              children: [
+                                                                FlipCard(
+                                                                  fill: Fill
+                                                                      .fillBack,
+                                                                  direction:
+                                                                      FlipDirection
+                                                                          .HORIZONTAL,
+                                                                  speed: 400,
+                                                                  front:
+                                                                      Padding(
+                                                                    padding: const EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            12.0),
+                                                                    child:
+                                                                        Container(
+                                                                      width:
+                                                                          700.0,
+                                                                      height:
+                                                                          80.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        gradient:
+                                                                            LinearGradient(
+                                                                          colors: [
+                                                                            Colors.black,
+                                                                            FlutterFlowTheme.of(context).primary
+                                                                          ],
+                                                                          stops: const [
+                                                                            0.0,
+                                                                            1.0
+                                                                          ],
+                                                                          begin: const AlignmentDirectional(
+                                                                              1.0,
+                                                                              0.0),
+                                                                          end: const AlignmentDirectional(
+                                                                              -1.0,
+                                                                              0),
+                                                                        ),
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(12.0),
+                                                                      ),
+                                                                      child:
+                                                                          Align(
+                                                                        alignment: const AlignmentDirectional(
+                                                                            0.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          'Planejamento',
+                                                                          textAlign:
+                                                                              TextAlign.center,
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Fira Code',
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
                                                                   ),
-                                                            ),
-                                                          ),
-                                                          Stack(
-                                                            alignment:
-                                                                const AlignmentDirectional(
-                                                                    -1.0, 0.0),
-                                                            children: [
-                                                              Container(
-                                                                width: 80.0,
-                                                                height: 80.0,
-                                                                decoration:
-                                                                    BoxDecoration(
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              100.0),
-                                                                  border: Border
-                                                                      .all(
-                                                                    color: Colors
-                                                                        .white,
-                                                                    width: 1.0,
+                                                                  back:
+                                                                      Container(
+                                                                    width:
+                                                                        700.0,
+                                                                    height:
+                                                                        80.0,
+                                                                    decoration:
+                                                                        const BoxDecoration(
+                                                                      borderRadius:
+                                                                          BorderRadius
+                                                                              .only(
+                                                                        bottomLeft:
+                                                                            Radius.circular(12.0),
+                                                                        bottomRight:
+                                                                            Radius.circular(12.0),
+                                                                        topLeft:
+                                                                            Radius.circular(12.0),
+                                                                        topRight:
+                                                                            Radius.circular(12.0),
+                                                                      ),
+                                                                    ),
+                                                                    child:
+                                                                        Align(
+                                                                      alignment:
+                                                                          const AlignmentDirectional(
+                                                                              0.0,
+                                                                              0.0),
+                                                                      child:
+                                                                          Padding(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                            12.0,
+                                                                            0.0,
+                                                                            12.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          'Analisamos suas ideias e definimos a melhor estratégia para transformar sua visão em um aplicativo de sucesso.',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Fira Code',
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
                                                                   ),
                                                                 ),
-                                                                child: Align(
-                                                                  alignment:
-                                                                      const AlignmentDirectional(
-                                                                          0.0,
-                                                                          0.0),
-                                                                  child:
+                                                                FlipCard(
+                                                                  fill: Fill
+                                                                      .fillBack,
+                                                                  direction:
+                                                                      FlipDirection
+                                                                          .HORIZONTAL,
+                                                                  speed: 400,
+                                                                  front:
+                                                                      Padding(
+                                                                    padding: const EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            12.0),
+                                                                    child:
+                                                                        Container(
+                                                                      width:
+                                                                          700.0,
+                                                                      height:
+                                                                          80.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        gradient:
+                                                                            LinearGradient(
+                                                                          colors: [
+                                                                            Colors.black,
+                                                                            FlutterFlowTheme.of(context).primary
+                                                                          ],
+                                                                          stops: const [
+                                                                            0.0,
+                                                                            1.0
+                                                                          ],
+                                                                          begin: const AlignmentDirectional(
+                                                                              1.0,
+                                                                              0.0),
+                                                                          end: const AlignmentDirectional(
+                                                                              -1.0,
+                                                                              0),
+                                                                        ),
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(12.0),
+                                                                      ),
+                                                                      child:
+                                                                          Align(
+                                                                        alignment: const AlignmentDirectional(
+                                                                            0.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          'Design',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Fira Code',
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                  back:
                                                                       Container(
-                                                                    width: 40.0,
+                                                                    width:
+                                                                        700.0,
                                                                     height:
-                                                                        40.0,
+                                                                        80.0,
+                                                                    decoration:
+                                                                        const BoxDecoration(
+                                                                      borderRadius:
+                                                                          BorderRadius
+                                                                              .only(
+                                                                        bottomLeft:
+                                                                            Radius.circular(12.0),
+                                                                        bottomRight:
+                                                                            Radius.circular(12.0),
+                                                                        topLeft:
+                                                                            Radius.circular(12.0),
+                                                                        topRight:
+                                                                            Radius.circular(12.0),
+                                                                      ),
+                                                                    ),
+                                                                    child:
+                                                                        Align(
+                                                                      alignment:
+                                                                          const AlignmentDirectional(
+                                                                              0.0,
+                                                                              0.0),
+                                                                      child:
+                                                                          Padding(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                            12.0,
+                                                                            0.0,
+                                                                            12.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          'Criamos uma interface atrativa e intuitiva, garantindo que o usuário tenha uma experiência memorável.',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Fira Code',
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                                FlipCard(
+                                                                  fill: Fill
+                                                                      .fillBack,
+                                                                  direction:
+                                                                      FlipDirection
+                                                                          .HORIZONTAL,
+                                                                  speed: 400,
+                                                                  front:
+                                                                      Padding(
+                                                                    padding: const EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            12.0),
+                                                                    child:
+                                                                        Container(
+                                                                      width:
+                                                                          700.0,
+                                                                      height:
+                                                                          80.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        gradient:
+                                                                            LinearGradient(
+                                                                          colors: [
+                                                                            Colors.black,
+                                                                            FlutterFlowTheme.of(context).primary
+                                                                          ],
+                                                                          stops: const [
+                                                                            0.0,
+                                                                            1.0
+                                                                          ],
+                                                                          begin: const AlignmentDirectional(
+                                                                              1.0,
+                                                                              0.0),
+                                                                          end: const AlignmentDirectional(
+                                                                              -1.0,
+                                                                              0),
+                                                                        ),
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(12.0),
+                                                                      ),
+                                                                      child:
+                                                                          Align(
+                                                                        alignment: const AlignmentDirectional(
+                                                                            0.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          'Desenvolvimento',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Fira Code',
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                  back:
+                                                                      Container(
+                                                                    width:
+                                                                        700.0,
+                                                                    height:
+                                                                        80.0,
+                                                                    decoration:
+                                                                        const BoxDecoration(
+                                                                      borderRadius:
+                                                                          BorderRadius
+                                                                              .only(
+                                                                        bottomLeft:
+                                                                            Radius.circular(12.0),
+                                                                        bottomRight:
+                                                                            Radius.circular(12.0),
+                                                                        topLeft:
+                                                                            Radius.circular(12.0),
+                                                                        topRight:
+                                                                            Radius.circular(12.0),
+                                                                      ),
+                                                                    ),
+                                                                    child:
+                                                                        Align(
+                                                                      alignment:
+                                                                          const AlignmentDirectional(
+                                                                              0.0,
+                                                                              0.0),
+                                                                      child:
+                                                                          Padding(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                            12.0,
+                                                                            0.0,
+                                                                            12.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          'Com tecnologias modernas, desenvolvemos o aplicativo com foco em desempenho, estabilidade e escalabilidade.',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Fira Code',
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                                FlipCard(
+                                                                  fill: Fill
+                                                                      .fillBack,
+                                                                  direction:
+                                                                      FlipDirection
+                                                                          .HORIZONTAL,
+                                                                  speed: 400,
+                                                                  front:
+                                                                      Padding(
+                                                                    padding: const EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            12.0),
+                                                                    child:
+                                                                        Container(
+                                                                      width:
+                                                                          700.0,
+                                                                      height:
+                                                                          80.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        gradient:
+                                                                            LinearGradient(
+                                                                          colors: [
+                                                                            Colors.black,
+                                                                            FlutterFlowTheme.of(context).primary
+                                                                          ],
+                                                                          stops: const [
+                                                                            0.0,
+                                                                            1.0
+                                                                          ],
+                                                                          begin: const AlignmentDirectional(
+                                                                              1.0,
+                                                                              0.0),
+                                                                          end: const AlignmentDirectional(
+                                                                              -1.0,
+                                                                              0),
+                                                                        ),
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(12.0),
+                                                                      ),
+                                                                      child:
+                                                                          Align(
+                                                                        alignment: const AlignmentDirectional(
+                                                                            0.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          'Testes',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Fira Code',
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                  back:
+                                                                      Container(
+                                                                    width:
+                                                                        700.0,
+                                                                    height:
+                                                                        80.0,
+                                                                    decoration:
+                                                                        const BoxDecoration(
+                                                                      borderRadius:
+                                                                          BorderRadius
+                                                                              .only(
+                                                                        bottomLeft:
+                                                                            Radius.circular(12.0),
+                                                                        bottomRight:
+                                                                            Radius.circular(12.0),
+                                                                        topLeft:
+                                                                            Radius.circular(12.0),
+                                                                        topRight:
+                                                                            Radius.circular(12.0),
+                                                                      ),
+                                                                    ),
+                                                                    child:
+                                                                        Align(
+                                                                      alignment:
+                                                                          const AlignmentDirectional(
+                                                                              0.0,
+                                                                              0.0),
+                                                                      child:
+                                                                          Padding(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                            12.0,
+                                                                            0.0,
+                                                                            12.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          'Realizamos testes rigorosos para garantir que cada funcionalidade funcione perfeitamente, antes do lançamento.',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Fira Code',
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                                FlipCard(
+                                                                  fill: Fill
+                                                                      .fillBack,
+                                                                  direction:
+                                                                      FlipDirection
+                                                                          .HORIZONTAL,
+                                                                  speed: 400,
+                                                                  front:
+                                                                      Container(
+                                                                    width:
+                                                                        700.0,
+                                                                    height:
+                                                                        80.0,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: Colors
-                                                                          .white,
+                                                                      gradient:
+                                                                          LinearGradient(
+                                                                        colors: [
+                                                                          Colors
+                                                                              .black,
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .primary
+                                                                        ],
+                                                                        stops: const [
+                                                                          0.0,
+                                                                          1.0
+                                                                        ],
+                                                                        begin: const AlignmentDirectional(
+                                                                            1.0,
+                                                                            0.0),
+                                                                        end: const AlignmentDirectional(
+                                                                            -1.0,
+                                                                            0),
+                                                                      ),
                                                                       borderRadius:
                                                                           BorderRadius.circular(
-                                                                              100.0),
+                                                                              12.0),
                                                                     ),
-                                                                    child: const Icon(
-                                                                      Icons
-                                                                          .arrow_outward,
-                                                                      color: Colors
-                                                                          .black,
-                                                                      size:
-                                                                          24.0,
+                                                                    child:
+                                                                        Align(
+                                                                      alignment:
+                                                                          const AlignmentDirectional(
+                                                                              0.0,
+                                                                              0.0),
+                                                                      child:
+                                                                          Text(
+                                                                        'Lançamento e Suporte',
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              fontFamily: 'Fira Code',
+                                                                              color: FlutterFlowTheme.of(context).info,
+                                                                              letterSpacing: 0.0,
+                                                                            ),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                  back:
+                                                                      Container(
+                                                                    width:
+                                                                        700.0,
+                                                                    height:
+                                                                        80.0,
+                                                                    decoration:
+                                                                        const BoxDecoration(
+                                                                      borderRadius:
+                                                                          BorderRadius
+                                                                              .only(
+                                                                        bottomLeft:
+                                                                            Radius.circular(12.0),
+                                                                        bottomRight:
+                                                                            Radius.circular(12.0),
+                                                                        topLeft:
+                                                                            Radius.circular(12.0),
+                                                                        topRight:
+                                                                            Radius.circular(12.0),
+                                                                      ),
+                                                                    ),
+                                                                    child:
+                                                                        Align(
+                                                                      alignment:
+                                                                          const AlignmentDirectional(
+                                                                              0.0,
+                                                                              0.0),
+                                                                      child:
+                                                                          Padding(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                            12.0,
+                                                                            0.0,
+                                                                            12.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          'Lançamos seu app e oferecemos suporte contínuo para acompanhar seu crescimento e garantir a melhor performance.',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Fira Code',
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                              ),
+                                                                        ),
+                                                                      ),
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ),
-                                                              Align(
-                                                                alignment:
-                                                                    const AlignmentDirectional(
-                                                                        -0.75,
-                                                                        -0.03),
-                                                                child:
-                                                                    Container(
-                                                                  decoration:
-                                                                      BoxDecoration(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primaryText,
-                                                                  ),
-                                                                  child:
-                                                                      Padding(
-                                                                    padding:
-                                                                        const EdgeInsets.all(
-                                                                            12.0),
-                                                                    child: Text(
-                                                                      'Show more',
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .override(
-                                                                            fontFamily:
-                                                                                'Fira Code',
-                                                                            color:
-                                                                                Colors.white,
-                                                                            letterSpacing:
-                                                                                0.0,
-                                                                            fontWeight:
-                                                                                FontWeight.w600,
-                                                                          ),
-                                                                    ),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ],
+                                                              ],
+                                                            ),
                                                           ),
                                                         ],
                                                       ),
