@@ -1976,202 +1976,206 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 ],
                                               ),
                                             ),
-                                            Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 20.0, 0.0, 70.0),
-                                              child: Container(
-                                                height: 240.0,
-                                                decoration: const BoxDecoration(),
-                                                child: Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.min,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment
-                                                          .spaceAround,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.end,
-                                                  children: [
-                                                    Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.min,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment.end,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        Padding(
-                                                          padding:
-                                                              const EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      24.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0),
-                                                          child: Text(
-                                                            'Clientes',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Jeko Demo',
-                                                                  color: Colors
-                                                                      .white,
-                                                                  fontSize:
-                                                                      48.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w800,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          'Jeko Demo'),
-                                                                ),
+                                            Align(
+                                              alignment: const AlignmentDirectional(
+                                                  0.0, 0.0),
+                                              child: Padding(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 20.0, 0.0, 70.0),
+                                                child: Container(
+                                                  height: 240.0,
+                                                  decoration: const BoxDecoration(),
+                                                  child: Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment.end,
+                                                    children: [
+                                                      Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.min,
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .end,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Padding(
+                                                            padding:
+                                                                const EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        24.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
+                                                            child: Text(
+                                                              'Clientes',
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Jeko Demo',
+                                                                    color: Colors
+                                                                        .white,
+                                                                    fontSize:
+                                                                        48.0,
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w800,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
+                                                                  ),
+                                                            ),
                                                           ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    Expanded(
-                                                      child: Container(
-                                                        decoration:
-                                                            const BoxDecoration(),
-                                                        child: Row(
-                                                          mainAxisSize:
-                                                              MainAxisSize.min,
-                                                          mainAxisAlignment:
-                                                              MainAxisAlignment
-                                                                  .spaceBetween,
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .end,
-                                                          children: [
-                                                            Flexible(
-                                                              child: Padding(
-                                                                padding:
-                                                                    const EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            80.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                child:
-                                                                    SizedBox(
-                                                                  width: 700.0,
-                                                                  height: 120.0,
+                                                        ],
+                                                      ),
+                                                      Expanded(
+                                                        child: Container(
+                                                          decoration:
+                                                              const BoxDecoration(),
+                                                          child: Row(
+                                                            mainAxisSize:
+                                                                MainAxisSize
+                                                                    .min,
+                                                            mainAxisAlignment:
+                                                                MainAxisAlignment
+                                                                    .center,
+                                                            crossAxisAlignment:
+                                                                CrossAxisAlignment
+                                                                    .end,
+                                                            children: [
+                                                              Flexible(
+                                                                child: Padding(
+                                                                  padding: const EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          80.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0),
                                                                   child:
-                                                                      CarouselSlider(
-                                                                    items: [
-                                                                      ClipRRect(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(8.0),
-                                                                        child: Image
-                                                                            .asset(
-                                                                          'assets/images/cliente_porpino.png',
-                                                                          fit: BoxFit
-                                                                              .fitWidth,
+                                                                      SizedBox(
+                                                                    width:
+                                                                        600.0,
+                                                                    height:
+                                                                        120.0,
+                                                                    child:
+                                                                        CarouselSlider(
+                                                                      items: [
+                                                                        ClipRRect(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                          child:
+                                                                              Image.asset(
+                                                                            'assets/images/cliente_porpino.png',
+                                                                            fit:
+                                                                                BoxFit.fitWidth,
+                                                                          ),
                                                                         ),
-                                                                      ),
-                                                                      ClipRRect(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(8.0),
-                                                                        child: Image
-                                                                            .asset(
-                                                                          'assets/images/cliente_tebrand.png',
-                                                                          fit: BoxFit
-                                                                              .fitWidth,
+                                                                        ClipRRect(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                          child:
+                                                                              Image.asset(
+                                                                            'assets/images/cliente_tebrand.png',
+                                                                            fit:
+                                                                                BoxFit.fitWidth,
+                                                                          ),
                                                                         ),
-                                                                      ),
-                                                                      ClipRRect(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(8.0),
-                                                                        child: Image
-                                                                            .asset(
-                                                                          'assets/images/cliente_mamp.png',
-                                                                          fit: BoxFit
-                                                                              .fitWidth,
+                                                                        ClipRRect(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                          child:
+                                                                              Image.asset(
+                                                                            'assets/images/cliente_mamp.png',
+                                                                            fit:
+                                                                                BoxFit.fitWidth,
+                                                                          ),
                                                                         ),
-                                                                      ),
-                                                                      ClipRRect(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(8.0),
-                                                                        child: Image
-                                                                            .asset(
-                                                                          'assets/images/cliente_tetus.png',
-                                                                          fit: BoxFit
-                                                                              .fitWidth,
+                                                                        ClipRRect(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                          child:
+                                                                              Image.asset(
+                                                                            'assets/images/cliente_tetus.png',
+                                                                            fit:
+                                                                                BoxFit.fitWidth,
+                                                                          ),
                                                                         ),
-                                                                      ),
-                                                                      ClipRRect(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(8.0),
-                                                                        child: Image
-                                                                            .asset(
-                                                                          'assets/images/cliente_2oficioMarituba.png',
-                                                                          fit: BoxFit
-                                                                              .fitWidth,
+                                                                        ClipRRect(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                          child:
+                                                                              Image.asset(
+                                                                            'assets/images/cliente_2oficioMarituba.png',
+                                                                            fit:
+                                                                                BoxFit.fitWidth,
+                                                                          ),
                                                                         ),
-                                                                      ),
-                                                                      ClipRRect(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(8.0),
-                                                                        child: Image
-                                                                            .asset(
-                                                                          'assets/images/cliente_mbdf.png',
-                                                                          fit: BoxFit
-                                                                              .fitWidth,
+                                                                        ClipRRect(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                          child:
+                                                                              Image.asset(
+                                                                            'assets/images/cliente_mbdf.png',
+                                                                            fit:
+                                                                                BoxFit.fitWidth,
+                                                                          ),
                                                                         ),
+                                                                      ],
+                                                                      carouselController:
+                                                                          _model.carouselController1 ??=
+                                                                              CarouselSliderController(),
+                                                                      options:
+                                                                          CarouselOptions(
+                                                                        initialPage:
+                                                                            2,
+                                                                        viewportFraction:
+                                                                            0.3,
+                                                                        disableCenter:
+                                                                            true,
+                                                                        enlargeCenterPage:
+                                                                            true,
+                                                                        enlargeFactor:
+                                                                            0.45,
+                                                                        enableInfiniteScroll:
+                                                                            true,
+                                                                        scrollDirection:
+                                                                            Axis.horizontal,
+                                                                        autoPlay:
+                                                                            true,
+                                                                        autoPlayAnimationDuration:
+                                                                            const Duration(milliseconds: 800),
+                                                                        autoPlayInterval:
+                                                                            const Duration(milliseconds: (800 + 4000)),
+                                                                        autoPlayCurve:
+                                                                            Curves.linear,
+                                                                        pauseAutoPlayInFiniteScroll:
+                                                                            true,
+                                                                        onPageChanged: (index,
+                                                                                _) =>
+                                                                            _model.carouselCurrentIndex1 =
+                                                                                index,
                                                                       ),
-                                                                    ],
-                                                                    carouselController:
-                                                                        _model.carouselController1 ??=
-                                                                            CarouselSliderController(),
-                                                                    options:
-                                                                        CarouselOptions(
-                                                                      initialPage:
-                                                                          2,
-                                                                      viewportFraction:
-                                                                          0.3,
-                                                                      disableCenter:
-                                                                          true,
-                                                                      enlargeCenterPage:
-                                                                          true,
-                                                                      enlargeFactor:
-                                                                          0.25,
-                                                                      enableInfiniteScroll:
-                                                                          true,
-                                                                      scrollDirection:
-                                                                          Axis.horizontal,
-                                                                      autoPlay:
-                                                                          true,
-                                                                      autoPlayAnimationDuration:
-                                                                          const Duration(
-                                                                              milliseconds: 800),
-                                                                      autoPlayInterval:
-                                                                          const Duration(
-                                                                              milliseconds: (800 + 4000)),
-                                                                      autoPlayCurve:
-                                                                          Curves
-                                                                              .linear,
-                                                                      pauseAutoPlayInFiniteScroll:
-                                                                          true,
-                                                                      onPageChanged: (index,
-                                                                              _) =>
-                                                                          _model.carouselCurrentIndex1 =
-                                                                              index,
                                                                     ),
                                                                   ),
                                                                 ),
                                                               ),
-                                                            ),
-                                                          ],
+                                                            ],
+                                                          ),
                                                         ),
                                                       ),
-                                                    ),
-                                                  ],
+                                                    ],
+                                                  ),
                                                 ),
                                               ),
                                             ),
