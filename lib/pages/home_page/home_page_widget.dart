@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -3318,65 +3319,104 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment.end,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        Padding(
-                                                          padding:
-                                                              const EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      20.0),
-                                                          child: Text(
-                                                            'Parceiros',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Jeko Demo',
-                                                                  color: Colors
-                                                                      .white,
-                                                                  fontSize:
-                                                                      32.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w800,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          'Jeko Demo'),
-                                                                ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
                                                     Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
                                                       children: [
                                                         Expanded(
-                                                          child: ClipRRect(
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        8.0),
-                                                            child: Image.asset(
-                                                              'assets/images/Frame_16.png',
-                                                              width: double
-                                                                  .infinity,
-                                                              fit: BoxFit
-                                                                  .contain,
+                                                          child: SizedBox(
+                                                            width:
+                                                                double.infinity,
+                                                            height: 150.0,
+                                                            child:
+                                                                CarouselSlider(
+                                                              items: [
+                                                                ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8.0),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/cliente_porpino-150x150.png',
+                                                                    width:
+                                                                        200.0,
+                                                                    height:
+                                                                        200.0,
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                  ),
+                                                                ),
+                                                                ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8.0),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/cliente_tebrand-150x150.png',
+                                                                    width:
+                                                                        200.0,
+                                                                    height:
+                                                                        200.0,
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                  ),
+                                                                ),
+                                                                ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8.0),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/cliente_mamp-150x150.png',
+                                                                    width:
+                                                                        200.0,
+                                                                    height:
+                                                                        200.0,
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                  ),
+                                                                ),
+                                                              ],
+                                                              carouselController:
+                                                                  _model.carouselController ??=
+                                                                      CarouselSliderController(),
+                                                              options:
+                                                                  CarouselOptions(
+                                                                initialPage: 2,
+                                                                viewportFraction:
+                                                                    0.5,
+                                                                disableCenter:
+                                                                    true,
+                                                                enlargeCenterPage:
+                                                                    true,
+                                                                enlargeFactor:
+                                                                    0.25,
+                                                                enableInfiniteScroll:
+                                                                    true,
+                                                                scrollDirection:
+                                                                    Axis.horizontal,
+                                                                autoPlay: true,
+                                                                autoPlayAnimationDuration:
+                                                                    const Duration(
+                                                                        milliseconds:
+                                                                            800),
+                                                                autoPlayInterval: const Duration(
+                                                                    milliseconds:
+                                                                        (800 +
+                                                                            4000)),
+                                                                autoPlayCurve:
+                                                                    Curves
+                                                                        .linear,
+                                                                pauseAutoPlayInFiniteScroll:
+                                                                    true,
+                                                                onPageChanged: (index,
+                                                                        _) =>
+                                                                    _model.carouselCurrentIndex =
+                                                                        index,
+                                                              ),
                                                             ),
                                                           ),
                                                         ),
