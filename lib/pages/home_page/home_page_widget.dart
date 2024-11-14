@@ -2745,7 +2745,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       ),
                       Expanded(
                         child: SizedBox(
-                          height: 1100.0,
+                          height: 1000.0,
                           child: Stack(
                             children: [
                               Align(
@@ -3530,35 +3530,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               ],
                                             ),
                                           ),
-                                        ),
-                                      ),
-                                    ),
-                                    Align(
-                                      alignment: const AlignmentDirectional(1.0, 0.0),
-                                      child: Container(
-                                        height: 200.0,
-                                        decoration: const BoxDecoration(),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Expanded(
-                                              flex: 4,
-                                              child: Align(
-                                                alignment: const AlignmentDirectional(
-                                                    1.0, 0.0),
-                                                child: ClipRRect(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          0.0),
-                                                  child: Image.asset(
-                                                    'assets/images/background1.png',
-                                                    width: double.infinity,
-                                                    fit: BoxFit.cover,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ],
                                         ),
                                       ),
                                     ),
