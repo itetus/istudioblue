@@ -5,6 +5,7 @@ import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'home_page_model.dart';
@@ -154,6 +155,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
+                                    useGoogleFonts: GoogleFonts.asMap()
+                                        .containsKey('Fira Code'),
                                   ),
                         ),
                         Text(
@@ -165,6 +168,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
+                                    useGoogleFonts: GoogleFonts.asMap()
+                                        .containsKey('Fira Code'),
                                   ),
                         ),
                         Text(
@@ -176,6 +181,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
+                                    useGoogleFonts: GoogleFonts.asMap()
+                                        .containsKey('Fira Code'),
                                   ),
                         ),
                         Text(
@@ -187,6 +194,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
+                                    useGoogleFonts: GoogleFonts.asMap()
+                                        .containsKey('Fira Code'),
                                   ),
                         ),
                       ].divide(const SizedBox(height: 20.0)),
@@ -205,6 +214,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 context: context,
                 phone: false,
                 tablet: false,
+                tabletLandscape: false,
               ))
                 Container(
                   decoration: const BoxDecoration(),
@@ -256,17 +266,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             children: [
                                               Text(
                                                 'Entre em Contato',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Fira Code',
-                                                          fontSize: 16.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      fontFamily: 'Fira Code',
+                                                      fontSize: 16.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w500,
+                                                      useGoogleFonts:
+                                                          GoogleFonts.asMap()
+                                                              .containsKey(
+                                                                  'Fira Code'),
+                                                    ),
                                               ),
                                             ].divide(const SizedBox(width: 40.0)),
                                           ),
@@ -312,6 +325,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Fira Code'),
                                                       ),
                                                 ),
                                               ),
@@ -330,7 +347,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w800,
-                                                        useGoogleFonts: false,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Jeko Demo'),
                                                         lineHeight: 1.2,
                                                       ),
                                                   colors: [
@@ -419,7 +439,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Fira Code',
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .bodyMediumFamily,
                                                                     color: Colors
                                                                         .black,
                                                                     letterSpacing:
@@ -427,6 +448,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -506,6 +531,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.bold,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Fira Code'),
                                                       ),
                                                 ),
                                                 Text(
@@ -521,6 +550,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Fira Code'),
                                                       ),
                                                 ),
                                               ],
@@ -573,19 +606,21 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       20.0, 0.0, 0.0, 10.0),
                                               child: Text(
                                                 'Criando aplicativos que impulsionam o seu negócio',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Jeko Demo',
-                                                          color: Colors.white,
-                                                          fontSize: 48.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w800,
-                                                          useGoogleFonts: false,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      fontFamily: 'Jeko Demo',
+                                                      color: Colors.white,
+                                                      fontSize: 48.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w800,
+                                                      useGoogleFonts:
+                                                          GoogleFonts.asMap()
+                                                              .containsKey(
+                                                                  'Jeko Demo'),
+                                                    ),
                                               ),
                                             ),
                                             Expanded(
@@ -611,6 +646,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w300,
+                                                          useGoogleFonts:
+                                                              GoogleFonts
+                                                                      .asMap()
+                                                                  .containsKey(
+                                                                      'Fira Code'),
                                                           lineHeight: 1.8,
                                                         ),
                                                   ),
@@ -665,8 +705,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w800,
-                                                                    useGoogleFonts:
-                                                                        false,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
                                                                   ),
                                                             ),
                                                           ),
@@ -687,6 +729,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w300,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Fira Code'),
                                                                 ),
                                                           ),
                                                         ],
@@ -739,8 +785,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w800,
-                                                                    useGoogleFonts:
-                                                                        false,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
                                                                   ),
                                                             ),
                                                           ),
@@ -761,6 +809,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w300,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Fira Code'),
                                                                 ),
                                                           ),
                                                         ],
@@ -813,8 +865,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w800,
-                                                                    useGoogleFonts:
-                                                                        false,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
                                                                   ),
                                                             ),
                                                           ),
@@ -835,6 +889,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w300,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Fira Code'),
                                                                 ),
                                                           ),
                                                           Padding(
@@ -862,8 +920,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w800,
-                                                                    useGoogleFonts:
-                                                                        false,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
                                                                   ),
                                                             ),
                                                           ),
@@ -884,6 +944,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w300,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Fira Code'),
                                                                 ),
                                                           ),
                                                         ],
@@ -936,8 +1000,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w800,
-                                                                  useGoogleFonts:
-                                                                      false,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Jeko Demo'),
                                                                 ),
                                                           ),
                                                         ),
@@ -975,8 +1041,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w800,
-                                                                  useGoogleFonts:
-                                                                      false,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Jeko Demo'),
                                                                 ),
                                                           ),
                                                         ),
@@ -1022,8 +1090,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w800,
-                                                                    useGoogleFonts:
-                                                                        false,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
                                                                   ),
                                                             ),
                                                           ),
@@ -1155,18 +1225,19 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               'Planejamento',
                                                                               textAlign: TextAlign.center,
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                fontFamily: 'Fira Code',
-                                                                                color: FlutterFlowTheme.of(context).info,
-                                                                                letterSpacing: 1.0,
-                                                                                fontWeight: FontWeight.bold,
-                                                                                shadows: [
-                                                                                  Shadow(
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
-                                                                                    offset: const Offset(2.0, 2.0),
-                                                                                    blurRadius: 2.0,
-                                                                                  )
-                                                                                ],
-                                                                              ),
+                                                                                    fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                    color: FlutterFlowTheme.of(context).info,
+                                                                                    letterSpacing: 1.0,
+                                                                                    fontWeight: FontWeight.bold,
+                                                                                    shadows: [
+                                                                                      Shadow(
+                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
+                                                                                        offset: const Offset(2.0, 2.0),
+                                                                                        blurRadius: 2.0,
+                                                                                      )
+                                                                                    ],
+                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                  ),
                                                                             ),
                                                                           ),
                                                                         ],
@@ -1230,9 +1301,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               Text(
                                                                             'Analisamos suas ideias e definimos a melhor estratégia para transformar sua visão em um aplicativo de sucesso.',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Fira Code',
+                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                   color: FlutterFlowTheme.of(context).info,
                                                                                   letterSpacing: 0.0,
+                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -1312,10 +1384,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                 Text(
                                                                               'Design',
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Fira Code',
+                                                                                    fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                     color: FlutterFlowTheme.of(context).info,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.bold,
+                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                   ),
                                                                             ),
                                                                           ),
@@ -1398,9 +1471,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               Text(
                                                                             'Criamos uma interface atrativa e intuitiva, garantindo que o usuário tenha uma experiência memorável.',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Fira Code',
+                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                   color: FlutterFlowTheme.of(context).info,
                                                                                   letterSpacing: 0.0,
+                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -1478,10 +1552,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                 Text(
                                                                               'Desenvolvimento',
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Fira Code',
+                                                                                    fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                     color: FlutterFlowTheme.of(context).info,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.bold,
+                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                   ),
                                                                             ),
                                                                           ),
@@ -1564,9 +1639,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               Text(
                                                                             'Com tecnologias modernas, desenvolvemos o aplicativo com foco em desempenho, estabilidade e escalabilidade.',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Fira Code',
+                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                   color: FlutterFlowTheme.of(context).info,
                                                                                   letterSpacing: 0.0,
+                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -1644,10 +1720,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                 Text(
                                                                               'Testes',
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Fira Code',
+                                                                                    fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                     color: FlutterFlowTheme.of(context).info,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.bold,
+                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                   ),
                                                                             ),
                                                                           ),
@@ -1730,9 +1807,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               Text(
                                                                             'Realizamos testes rigorosos para garantir que cada funcionalidade funcione perfeitamente, antes do lançamento.',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Fira Code',
+                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                   color: FlutterFlowTheme.of(context).info,
                                                                                   letterSpacing: 0.0,
+                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -1809,10 +1887,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               Text(
                                                                             'Lançamento e Suporte',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Fira Code',
+                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                   color: FlutterFlowTheme.of(context).info,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.bold,
+                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -1894,9 +1973,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               Text(
                                                                             'Lançamos seu app e oferecemos suporte contínuo para acompanhar seu crescimento e garantir a melhor performance.',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Fira Code',
+                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                   color: FlutterFlowTheme.of(context).info,
                                                                                   letterSpacing: 0.0,
+                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -1964,8 +2044,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w800,
-                                                                    useGoogleFonts:
-                                                                        false,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
                                                                   ),
                                                             ),
                                                           ),
@@ -2073,7 +2155,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w800,
-                                                        useGoogleFonts: false,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Jeko Demo'),
                                                         lineHeight: 1.2,
                                                       ),
                                                   colors: [
@@ -2103,6 +2188,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Fira Code'),
                                                       ),
                                                 ),
                                               ),
@@ -2172,8 +2261,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Fira Code',
+                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMediumFamily,
                                                                   color: Colors
                                                                       .black,
                                                                   letterSpacing:
@@ -2181,6 +2271,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .bodyMediumFamily),
                                                                 ),
                                                           ),
                                                         ),
@@ -2280,6 +2375,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
+                                                  useGoogleFonts:
+                                                      GoogleFonts.asMap()
+                                                          .containsKey(
+                                                              'Fira Code'),
                                                 ),
                                           ),
                                         ].divide(const SizedBox(width: 34.0)),
@@ -2297,6 +2396,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   fontSize: 14.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
+                                                  useGoogleFonts:
+                                                      GoogleFonts.asMap()
+                                                          .containsKey(
+                                                              'Fira Code'),
                                                 ),
                                           ),
                                           Text(
@@ -2309,6 +2412,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   fontSize: 14.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
+                                                  useGoogleFonts:
+                                                      GoogleFonts.asMap()
+                                                          .containsKey(
+                                                              'Fira Code'),
                                                 ),
                                           ),
                                           Text(
@@ -2321,6 +2428,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   fontSize: 14.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
+                                                  useGoogleFonts:
+                                                      GoogleFonts.asMap()
+                                                          .containsKey(
+                                                              'Fira Code'),
                                                 ),
                                           ),
                                         ].divide(const SizedBox(width: 34.0)),
@@ -2338,7 +2449,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 ),
               if (responsiveVisibility(
                 context: context,
-                tabletLandscape: false,
                 desktop: false,
               ))
                 Container(
@@ -2444,7 +2554,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w800,
-                                                        useGoogleFonts: false,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Jeko Demo'),
                                                         lineHeight: 1.2,
                                                       ),
                                                   colors: [
@@ -2540,6 +2653,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Fira Code'),
                                                                   ),
                                                             ),
                                                           ),
@@ -2622,8 +2739,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Fira Code',
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily,
                                                                 color: Colors
                                                                     .black,
                                                                 fontSize: 16.0,
@@ -2632,6 +2750,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .bodyMediumFamily),
                                                               ),
                                                         ),
                                                         Text(
@@ -2640,8 +2763,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Fira Code',
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily,
                                                                 color: const Color(
                                                                     0x6614181B),
                                                                 fontSize: 12.0,
@@ -2650,6 +2774,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .bodyMediumFamily),
                                                               ),
                                                         ),
                                                       ],
@@ -2716,7 +2845,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w800,
-                                                        useGoogleFonts: false,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Jeko Demo'),
                                                       ),
                                             ),
                                           ),
@@ -2729,19 +2861,22 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               child: Text(
                                                 'Explore the unparalleled capabilities that set our blockchain platform apart. From decentralized ledger technology to smart contract support, discover the robust features that make our platform the cornerstone of innovation.',
                                                 textAlign: TextAlign.start,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Fira Mono',
-                                                          color: Colors.white,
-                                                          fontSize: 16.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w300,
-                                                          lineHeight: 1.8,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      fontFamily: 'Fira Mono',
+                                                      color: Colors.white,
+                                                      fontSize: 16.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w300,
+                                                      useGoogleFonts:
+                                                          GoogleFonts.asMap()
+                                                              .containsKey(
+                                                                  'Fira Mono'),
+                                                      lineHeight: 1.8,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -2795,8 +2930,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w800,
-                                                                    useGoogleFonts:
-                                                                        false,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
                                                                   ),
                                                             ),
                                                           ),
@@ -2817,6 +2954,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w200,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Fira Code'),
                                                                 ),
                                                           ),
                                                         ],
@@ -2869,8 +3010,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w800,
-                                                                    useGoogleFonts:
-                                                                        false,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
                                                                   ),
                                                             ),
                                                           ),
@@ -2891,6 +3034,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w200,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Fira Code'),
                                                                 ),
                                                           ),
                                                         ],
@@ -2943,8 +3090,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w800,
-                                                                    useGoogleFonts:
-                                                                        false,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
                                                                   ),
                                                             ),
                                                           ),
@@ -2965,6 +3114,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w200,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Fira Code'),
                                                                 ),
                                                           ),
                                                           Padding(
@@ -2992,8 +3145,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w800,
-                                                                    useGoogleFonts:
-                                                                        false,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            'Jeko Demo'),
                                                                   ),
                                                             ),
                                                           ),
@@ -3014,6 +3169,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w200,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Fira Code'),
                                                                 ),
                                                           ),
                                                         ],
@@ -3070,8 +3229,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w800,
-                                                                useGoogleFonts:
-                                                                    false,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        'Jeko Demo'),
                                                               ),
                                                         ),
                                                       ),
@@ -3108,8 +3269,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w800,
-                                                                useGoogleFonts:
-                                                                    false,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        'Jeko Demo'),
                                                               ),
                                                         ),
                                                       ),
@@ -3146,8 +3309,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w800,
-                                                                useGoogleFonts:
-                                                                    false,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        'Jeko Demo'),
                                                               ),
                                                         ),
                                                       ),
@@ -3211,8 +3376,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w800,
-                                                                  useGoogleFonts:
-                                                                      false,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Jeko Demo'),
                                                                 ),
                                                           ),
                                                         ),
@@ -3331,7 +3498,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w800,
-                                                          useGoogleFonts: false,
+                                                          useGoogleFonts:
+                                                              GoogleFonts
+                                                                      .asMap()
+                                                                  .containsKey(
+                                                                      'Jeko Demo'),
                                                           lineHeight: 1.2,
                                                         ),
                                                     colors: [
@@ -3363,6 +3534,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
+                                                          useGoogleFonts:
+                                                              GoogleFonts
+                                                                      .asMap()
+                                                                  .containsKey(
+                                                                      'Fira Code'),
                                                         ),
                                                   ),
                                                 ),
@@ -3436,7 +3612,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Fira Code',
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .bodyMediumFamily,
                                                                     color: Colors
                                                                         .black,
                                                                     letterSpacing:
@@ -3444,6 +3621,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -3555,6 +3736,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   fontSize: 14.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.normal,
+                                                  useGoogleFonts:
+                                                      GoogleFonts.asMap()
+                                                          .containsKey(
+                                                              'Fira Code'),
                                                 ),
                                           ),
                                         ].divide(const SizedBox(width: 34.0)),
@@ -3577,6 +3762,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
+                                                useGoogleFonts:
+                                                    GoogleFonts.asMap()
+                                                        .containsKey(
+                                                            'Fira Code'),
                                               ),
                                         ),
                                         Text(
@@ -3591,6 +3780,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
+                                                useGoogleFonts:
+                                                    GoogleFonts.asMap()
+                                                        .containsKey(
+                                                            'Fira Code'),
                                               ),
                                         ),
                                         Text(
@@ -3605,6 +3798,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
+                                                useGoogleFonts:
+                                                    GoogleFonts.asMap()
+                                                        .containsKey(
+                                                            'Fira Code'),
                                               ),
                                         ),
                                       ].divide(const SizedBox(height: 20.0)),

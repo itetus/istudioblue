@@ -8,7 +8,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 const kThemeModeKey = '__theme_mode__';
 SharedPreferences? _prefs;
 
+enum DeviceSize {
+  mobile,
+  tablet,
+  desktop,
+}
+
 abstract class FlutterFlowTheme {
+  static DeviceSize deviceSize = DeviceSize.mobile;
+
   static Future initialize() async =>
       _prefs = await SharedPreferences.getInstance();
   static ThemeMode get themeMode {
@@ -25,6 +33,7 @@ abstract class FlutterFlowTheme {
       : _prefs?.setBool(kThemeModeKey, mode == ThemeMode.dark);
 
   static FlutterFlowTheme of(BuildContext context) {
+    deviceSize = getDeviceSize(context);
     return Theme.of(context).brightness == Brightness.dark
         ? DarkModeTheme()
         : LightModeTheme();
@@ -114,7 +123,22 @@ abstract class FlutterFlowTheme {
   String get bodySmallFamily => typography.bodySmallFamily;
   TextStyle get bodySmall => typography.bodySmall;
 
-  Typography get typography => ThemeTypography(this);
+  Typography get typography => {
+        DeviceSize.mobile: MobileTypography(this),
+        DeviceSize.tablet: TabletTypography(this),
+        DeviceSize.desktop: DesktopTypography(this),
+      }[deviceSize]!;
+}
+
+DeviceSize getDeviceSize(BuildContext context) {
+  final width = MediaQuery.sizeOf(context).width;
+  if (width < 479) {
+    return DeviceSize.mobile;
+  } else if (width < 991) {
+    return DeviceSize.tablet;
+  } else {
+    return DeviceSize.desktop;
+  }
 }
 
 class LightModeTheme extends FlutterFlowTheme {
@@ -176,8 +200,232 @@ abstract class Typography {
   TextStyle get bodySmall;
 }
 
-class ThemeTypography extends Typography {
-  ThemeTypography(this.theme);
+class MobileTypography extends Typography {
+  MobileTypography(this.theme);
+
+  final FlutterFlowTheme theme;
+
+  String get displayLargeFamily => 'Jeko Demo';
+  TextStyle get displayLarge => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 64.0,
+      );
+  String get displayMediumFamily => 'Jeko Demo';
+  TextStyle get displayMedium => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 44.0,
+      );
+  String get displaySmallFamily => 'Jeko Demo';
+  TextStyle get displaySmall => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 36.0,
+      );
+  String get headlineLargeFamily => 'Jeko Demo';
+  TextStyle get headlineLarge => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 32.0,
+      );
+  String get headlineMediumFamily => 'Jeko Demo';
+  TextStyle get headlineMedium => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 28.0,
+      );
+  String get headlineSmallFamily => 'Jeko Demo';
+  TextStyle get headlineSmall => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 24.0,
+      );
+  String get titleLargeFamily => 'Jeko Demo';
+  TextStyle get titleLarge => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 20.0,
+      );
+  String get titleMediumFamily => 'Jeko Demo';
+  TextStyle get titleMedium => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 18.0,
+      );
+  String get titleSmallFamily => 'Jeko Demo';
+  TextStyle get titleSmall => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 16.0,
+      );
+  String get labelLargeFamily => 'Fira Code';
+  TextStyle get labelLarge => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.secondaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 16.0,
+      );
+  String get labelMediumFamily => 'Fira Code';
+  TextStyle get labelMedium => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.secondaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 14.0,
+      );
+  String get labelSmallFamily => 'Fira Code';
+  TextStyle get labelSmall => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.secondaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 12.0,
+      );
+  String get bodyLargeFamily => 'Fira Code';
+  TextStyle get bodyLarge => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.primaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 16.0,
+      );
+  String get bodyMediumFamily => 'Fira Code';
+  TextStyle get bodyMedium => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.primaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 14.0,
+      );
+  String get bodySmallFamily => 'Fira Code';
+  TextStyle get bodySmall => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.primaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 12.0,
+      );
+}
+
+class TabletTypography extends Typography {
+  TabletTypography(this.theme);
+
+  final FlutterFlowTheme theme;
+
+  String get displayLargeFamily => 'Jeko Demo';
+  TextStyle get displayLarge => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 64.0,
+      );
+  String get displayMediumFamily => 'Jeko Demo';
+  TextStyle get displayMedium => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 44.0,
+      );
+  String get displaySmallFamily => 'Jeko Demo';
+  TextStyle get displaySmall => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 36.0,
+      );
+  String get headlineLargeFamily => 'Jeko Demo';
+  TextStyle get headlineLarge => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 32.0,
+      );
+  String get headlineMediumFamily => 'Jeko Demo';
+  TextStyle get headlineMedium => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 28.0,
+      );
+  String get headlineSmallFamily => 'Jeko Demo';
+  TextStyle get headlineSmall => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 24.0,
+      );
+  String get titleLargeFamily => 'Jeko Demo';
+  TextStyle get titleLarge => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 20.0,
+      );
+  String get titleMediumFamily => 'Jeko Demo';
+  TextStyle get titleMedium => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 18.0,
+      );
+  String get titleSmallFamily => 'Jeko Demo';
+  TextStyle get titleSmall => TextStyle(
+        fontFamily: 'Jeko Demo',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 16.0,
+      );
+  String get labelLargeFamily => 'Fira Code';
+  TextStyle get labelLarge => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.secondaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 16.0,
+      );
+  String get labelMediumFamily => 'Fira Code';
+  TextStyle get labelMedium => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.secondaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 14.0,
+      );
+  String get labelSmallFamily => 'Fira Code';
+  TextStyle get labelSmall => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.secondaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 12.0,
+      );
+  String get bodyLargeFamily => 'Fira Code';
+  TextStyle get bodyLarge => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.primaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 16.0,
+      );
+  String get bodyMediumFamily => 'Fira Code';
+  TextStyle get bodyMedium => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.primaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 14.0,
+      );
+  String get bodySmallFamily => 'Fira Code';
+  TextStyle get bodySmall => GoogleFonts.getFont(
+        'Fira Code',
+        color: theme.primaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 12.0,
+      );
+}
+
+class DesktopTypography extends Typography {
+  DesktopTypography(this.theme);
 
   final FlutterFlowTheme theme;
 
