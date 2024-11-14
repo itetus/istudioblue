@@ -62,8 +62,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
-                          'assets/images/Group_1.png',
-                          width: 120.0,
+                          'assets/images/LOGO_iStudioblue_2X1_400.png',
+                          width: 180.0,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -87,7 +87,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   ),
                         ),
                         Text(
-                          'Services',
+                          'login',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Fira Code',
@@ -97,17 +97,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   ),
                         ),
                         Text(
-                          'Code',
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Fira Code',
-                                    fontSize: 16.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                        ),
-                        Text(
-                          'Community',
+                          'Logout',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Fira Code',
@@ -128,7 +118,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100.0),
                           border: Border.all(
-                            color: const Color(0xFFFB9600),
+                            color: FlutterFlowTheme.of(context).primary,
                             width: 1.0,
                           ),
                         ),
@@ -138,7 +128,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             width: 40.0,
                             height: 40.0,
                             decoration: BoxDecoration(
-                              color: const Color(0xFFFB9600),
+                              color: FlutterFlowTheme.of(context).primary,
                               borderRadius: BorderRadius.circular(100.0),
                             ),
                             child: const Icon(
@@ -158,7 +148,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           child: Padding(
                             padding: const EdgeInsets.all(12.0),
                             child: Text(
-                              'Show more',
+                              'Contato',
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
@@ -2387,6 +2377,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Fira Code',
+                                                        color: Colors.black,
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -2444,8 +2435,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 .circular(
                                                                     100.0),
                                                         border: Border.all(
-                                                          color:
-                                                              const Color(0xFFFB9600),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
                                                           width: 1.0,
                                                         ),
                                                       ),
@@ -2477,7 +2469,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     Align(
                                                       alignment:
                                                           const AlignmentDirectional(
-                                                              -0.54, -0.07),
+                                                              -0.5, -0.07),
                                                       child: Container(
                                                         decoration:
                                                             const BoxDecoration(
@@ -2495,6 +2487,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Fira Code',
+                                                                  color: Colors
+                                                                      .black,
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -2546,11 +2540,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   ),
                                                   Container(
                                                     height: 40.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                    ),
+                                                    decoration: const BoxDecoration(),
                                                     child: Align(
                                                       alignment:
                                                           const AlignmentDirectional(
@@ -2568,11 +2558,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   ),
                                                   Container(
                                                     width: 100.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                    ),
+                                                    decoration: const BoxDecoration(),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -2591,6 +2577,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Fira Code',
+                                                                color: Colors
+                                                                    .black,
                                                                 fontSize: 16.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -2702,7 +2690,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       ),
                       Expanded(
                         child: SizedBox(
-                          height: 1700.0,
+                          height: 1100.0,
                           child: Stack(
                             children: [
                               Align(
@@ -3198,21 +3186,6 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
-                                                  Padding(
-                                                    padding:
-                                                        const EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 20.0),
-                                                    child: ClipRRect(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              8.0),
-                                                      child: Image.asset(
-                                                        'assets/images/th.jpeg',
-                                                        fit: BoxFit.cover,
-                                                      ),
-                                                    ),
-                                                  ),
                                                   Expanded(
                                                     flex: 2,
                                                     child: Padding(
@@ -3233,35 +3206,6 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Expanded(
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          20.0),
-                                                              child: Text(
-                                                                'Immerse yourself in the lines of code that define the heartbeat of our platform. Uncover the elegant implementation of decentralized ledger technology, the precision of smart contracts, and the robust security measures woven into the fabric of our code.',
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .override(
-                                                                      fontFamily:
-                                                                          'Fira Code',
-                                                                      color: Colors
-                                                                          .white,
-                                                                      fontSize:
-                                                                          14.0,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      lineHeight:
-                                                                          1.8,
-                                                                    ),
-                                                              ),
-                                                            ),
-                                                          ),
                                                           Stack(
                                                             alignment:
                                                                 const AlignmentDirectional(
@@ -3491,31 +3435,22 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     mainAxisSize:
                                                         MainAxisSize.max,
                                                     children: [
-                                                      FaIcon(
+                                                      const FaIcon(
                                                         FontAwesomeIcons
                                                             .facebookF,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primaryText,
+                                                        color: Colors.black,
                                                         size: 20.0,
                                                       ),
-                                                      FaIcon(
+                                                      const FaIcon(
                                                         FontAwesomeIcons
                                                             .instagram,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primaryText,
+                                                        color: Colors.black,
                                                         size: 20.0,
                                                       ),
-                                                      FaIcon(
+                                                      const FaIcon(
                                                         FontAwesomeIcons
                                                             .whatsapp,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primaryText,
+                                                        color: Colors.black,
                                                         size: 20.0,
                                                       ),
                                                     ].divide(
@@ -3644,6 +3579,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Fira Code',
+                                                                    color: Colors
+                                                                        .black,
                                                                     letterSpacing:
                                                                         0.0,
                                                                     fontWeight:
@@ -3736,22 +3673,19 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        FaIcon(
+                                        const FaIcon(
                                           FontAwesomeIcons.facebookF,
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
+                                          color: Colors.black,
                                           size: 22.0,
                                         ),
-                                        FaIcon(
+                                        const FaIcon(
                                           FontAwesomeIcons.instagram,
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
+                                          color: Colors.black,
                                           size: 22.0,
                                         ),
-                                        FaIcon(
+                                        const FaIcon(
                                           FontAwesomeIcons.whatsapp,
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
+                                          color: Colors.black,
                                           size: 22.0,
                                         ),
                                       ].divide(const SizedBox(width: 20.0)),
@@ -3780,7 +3714,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                            MainAxisAlignment.center,
                                         children: [
                                           Text(
                                             '2024 istudio.blue. All right reserved.',
@@ -3788,6 +3722,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Fira Code',
+                                                  color: Colors.black,
                                                   fontSize: 14.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.normal,
@@ -3807,6 +3742,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Fira Code',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -3818,6 +3756,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Fira Code',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -3829,6 +3770,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Fira Code',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
