@@ -204,12 +204,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 40.0, 0.0, 0.0),
                                     child: Container(
-                                      width: 1250.0,
+                                      width: 800.0,
                                       decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                            MainAxisAlignment.spaceBetween,
                                         children: [
                                           Padding(
                                             padding:
@@ -281,6 +281,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         .override(
                                                           fontFamily:
                                                               'Fira Code',
+                                                          color: Colors.black,
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -385,6 +386,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Fira Code',
+                                                                  color: Colors
+                                                                      .black,
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -501,11 +504,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 Align(
                                   alignment: const AlignmentDirectional(0.0, 0.9),
                                   child: Container(
-                                    width: double.infinity,
+                                    width: 1250.0,
                                     height: 100.0,
                                     decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
                                       children: [
                                         Align(
                                           alignment:
@@ -520,10 +525,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         ),
                                         Container(
                                           width: 140.0,
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                          ),
+                                          decoration: const BoxDecoration(),
                                           child: Align(
                                             alignment:
                                                 const AlignmentDirectional(-1.0, 0.0),
@@ -539,10 +541,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         ),
                                         Container(
                                           width: 100.0,
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                          ),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
