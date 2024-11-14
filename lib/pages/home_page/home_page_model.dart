@@ -10,11 +10,15 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   ScrollController? columnController1;
   // State field(s) for Column widget.
   ScrollController? columnController2;
+  // State field(s) for Carousel widget.
+  CarouselSliderController? carouselController1;
+  int carouselCurrentIndex1 = 2;
+
   // State field(s) for Row widget.
   ScrollController? rowController;
   // State field(s) for Carousel widget.
-  CarouselSliderController? carouselController;
-  int carouselCurrentIndex = 2;
+  CarouselSliderController? carouselController2;
+  int carouselCurrentIndex2 = 2;
 
   @override
   void initState(BuildContext context) {
