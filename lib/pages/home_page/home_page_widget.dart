@@ -1971,17 +1971,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   .fromSTEB(
                                                       0.0, 20.0, 0.0, 70.0),
                                               child: Container(
-                                                height: 180.0,
+                                                height: 240.0,
                                                 decoration: const BoxDecoration(),
                                                 child: Row(
                                                   mainAxisSize:
-                                                      MainAxisSize.max,
+                                                      MainAxisSize.min,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceAround,
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.end,
                                                   children: [
                                                     Column(
                                                       mainAxisSize:
-                                                          MainAxisSize.max,
+                                                          MainAxisSize.min,
                                                       mainAxisAlignment:
                                                           MainAxisAlignment.end,
                                                       crossAxisAlignment:
@@ -2028,25 +2031,27 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                             const BoxDecoration(),
                                                         child: Row(
                                                           mainAxisSize:
-                                                              MainAxisSize.max,
+                                                              MainAxisSize.min,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .spaceBetween,
                                                           crossAxisAlignment:
                                                               CrossAxisAlignment
                                                                   .end,
                                                           children: [
-                                                            Expanded(
+                                                            Flexible(
                                                               child: Padding(
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                            40.0,
+                                                                            80.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
                                                                 child:
                                                                     SizedBox(
-                                                                  width: double
-                                                                      .infinity,
-                                                                  height: 150.0,
+                                                                  width: 700.0,
+                                                                  height: 120.0,
                                                                   child:
                                                                       CarouselSlider(
                                                                     items: [
@@ -2056,10 +2061,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         child: Image
                                                                             .asset(
                                                                           'assets/images/cliente_porpino.png',
-                                                                          width:
-                                                                              200.0,
-                                                                          height:
-                                                                              200.0,
                                                                           fit: BoxFit
                                                                               .fitWidth,
                                                                         ),
@@ -2080,10 +2081,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         child: Image
                                                                             .asset(
                                                                           'assets/images/cliente_mamp.png',
-                                                                          width:
-                                                                              200.0,
-                                                                          height:
-                                                                              200.0,
                                                                           fit: BoxFit
                                                                               .fitWidth,
                                                                         ),
@@ -2094,10 +2091,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         child: Image
                                                                             .asset(
                                                                           'assets/images/cliente_tetus.png',
-                                                                          width:
-                                                                              200.0,
-                                                                          height:
-                                                                              200.0,
                                                                           fit: BoxFit
                                                                               .fitWidth,
                                                                         ),
@@ -2108,10 +2101,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         child: Image
                                                                             .asset(
                                                                           'assets/images/cliente_2oficioMarituba.png',
-                                                                          width:
-                                                                              200.0,
-                                                                          height:
-                                                                              200.0,
                                                                           fit: BoxFit
                                                                               .fitWidth,
                                                                         ),
@@ -2122,10 +2111,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         child: Image
                                                                             .asset(
                                                                           'assets/images/cliente_mbdf.png',
-                                                                          width:
-                                                                              200.0,
-                                                                          height:
-                                                                              200.0,
                                                                           fit: BoxFit
                                                                               .fitWidth,
                                                                         ),
