@@ -1,3 +1,5 @@
+import '/auth/supabase_auth/auth_util.dart';
+import '/components/login_component_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -156,6 +158,19 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        Container(
+                          width: 250.0,
+                          decoration: const BoxDecoration(),
+                          child: Visibility(
+                            visible:
+                                currentUserUid == '',
+                            child: wrapWithModel(
+                              model: _model.loginComponentModel,
+                              updateCallback: () => safeSetState(() {}),
+                              child: const LoginComponentWidget(),
+                            ),
+                          ),
+                        ),
                         Text(
                           'Home',
                           style:
