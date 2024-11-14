@@ -553,7 +553,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                         Expanded(
                           child: SizedBox(
-                            height: 2000.0,
+                            height: 2300.0,
                             child: Stack(
                               children: [
                                 Align(
@@ -576,7 +576,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 100.0, 0.0, 0.0),
                                       child: Container(
-                                        width: 1250.0,
+                                        width: 1100.0,
                                         decoration: const BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -588,7 +588,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   .fromSTEB(
                                                       20.0, 0.0, 0.0, 10.0),
                                               child: Text(
-                                                'Criando aplicativos que impulsionam o seu negócio',
+                                                'Criando aplicativos\nque impulsionam o seu negócio',
+                                                textAlign: TextAlign.start,
                                                 style: FlutterFlowTheme.of(
                                                         context)
                                                     .bodyMedium
@@ -613,10 +614,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     0.0, 0.0),
                                                 child: Padding(
                                                   padding: const EdgeInsetsDirectional
-                                                      .fromSTEB(20.0, 0.0,
-                                                          100.0, 40.0),
+                                                      .fromSTEB(20.0, 0.0, 50.0,
+                                                          40.0),
                                                   child: Text(
-                                                    'Especializada na criação de aplicativos que conectam você aos seus clientes de forma eficiente e inovadora. Nosso foco é entregar soluções que realmente geram resultados, seja para fortalecer sua presença no digital ou para otimizar operações internas. Trabalhamos para criar aplicativos que não só funcionam, mas que transformam a maneira como você se relaciona com seu público.”',
+                                                    'Especializada na criação de aplicativos que conectam você aos seus clientes de forma eficiente e inovadora. Nosso foco é entregar soluções que realmente geram resultados, seja para fortalecer sua presença no digital ou para otimizar operações internas. Trabalhamos para criar aplicativos que não só funcionam, mas que transformam a maneira como você se relaciona com seu público.',
                                                     textAlign: TextAlign.start,
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -646,7 +647,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 Expanded(
                                                   child: Container(
                                                     width: 100.0,
-                                                    height: 350.0,
+                                                    height: 410.0,
                                                     decoration: BoxDecoration(
                                                       color: const Color(0x1BFFFFFF),
                                                       borderRadius:
@@ -727,7 +728,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 Expanded(
                                                   child: Container(
                                                     width: 100.0,
-                                                    height: 350.0,
+                                                    height: 410.0,
                                                     decoration: BoxDecoration(
                                                       color: const Color(0x1BFFFFFF),
                                                       borderRadius:
@@ -808,7 +809,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 Expanded(
                                                   child: Container(
                                                     width: 100.0,
-                                                    height: 350.0,
+                                                    height: 410.0,
                                                     decoration: BoxDecoration(
                                                       color: const Color(0x1BFFFFFF),
                                                       borderRadius:
@@ -1055,7 +1056,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       0.0,
                                                                       10.0),
                                                           child: AutoSizeText(
-                                                            'nas melhores mãos',
+                                                            'nas melhores mãos.',
                                                             minFontSize: 36.0,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
@@ -2189,7 +2190,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             color: Colors.white,
                           ),
                           child: SizedBox(
-                            height: 350.0,
+                            height: 500.0,
                             child: Stack(
                               children: [
                                 Container(
@@ -2203,8 +2204,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         alignment:
                                             const AlignmentDirectional(0.0, -1.0),
                                         child: Container(
-                                          width: 1250.0,
-                                          height: 500.0,
+                                          width: 800.0,
                                           decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -2288,7 +2288,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               Padding(
                                                 padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
-                                                        0.0, 0.0, 0.0, 10.0),
+                                                        0.0, 24.0, 0.0, 10.0),
                                                 child: GradientText(
                                                   'Quer um aplicativo que leve seu negócio a outro nível? Vamos fazer isso acontecer.',
                                                   textAlign: TextAlign.center,
@@ -2431,7 +2431,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           ),
                           alignment: const AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 1250.0,
+                            width: 900.0,
                             decoration: const BoxDecoration(),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -2563,22 +2563,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           ),
                                           Text(
                                             'Terms of Service',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Fira Code',
-                                                  color: Colors.black,
-                                                  fontSize: 14.0,
-                                                  letterSpacing: 0.0,
-                                                  fontWeight: FontWeight.w600,
-                                                  useGoogleFonts:
-                                                      GoogleFonts.asMap()
-                                                          .containsKey(
-                                                              'Fira Code'),
-                                                ),
-                                          ),
-                                          Text(
-                                            'Cookies Settings',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -3031,34 +3015,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 .containsKey(
                                                                     'Jeko Demo'),
                                                       ),
-                                            ),
-                                          ),
-                                          Expanded(
-                                            flex: 4,
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 0.0, 600.0, 60.0),
-                                              child: Text(
-                                                'Explore the unparalleled capabilities that set our blockchain platform apart. From decentralized ledger technology to smart contract support, discover the robust features that make our platform the cornerstone of innovation.',
-                                                textAlign: TextAlign.start,
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Fira Mono',
-                                                      color: Colors.white,
-                                                      fontSize: 16.0,
-                                                      letterSpacing: 0.0,
-                                                      fontWeight:
-                                                          FontWeight.w300,
-                                                      useGoogleFonts:
-                                                          GoogleFonts.asMap()
-                                                              .containsKey(
-                                                                  'Fira Mono'),
-                                                      lineHeight: 1.8,
-                                                    ),
-                                              ),
                                             ),
                                           ),
                                           SingleChildScrollView(
