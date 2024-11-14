@@ -1,5 +1,4 @@
 import '/auth/supabase_auth/auth_util.dart';
-import '/components/login_component_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -161,15 +160,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         Container(
                           width: 250.0,
                           decoration: const BoxDecoration(),
-                          child: Visibility(
-                            visible:
-                                currentUserUid == '',
-                            child: wrapWithModel(
-                              model: _model.loginComponentModel,
-                              updateCallback: () => safeSetState(() {}),
-                              child: const LoginComponentWidget(),
-                            ),
-                          ),
                         ),
                         Text(
                           'Home',
@@ -197,18 +187,32 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         .containsKey('Fira Code'),
                                   ),
                         ),
-                        Text(
-                          'Sair',
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Fira Code',
-                                    color: Colors.black,
-                                    fontSize: 16.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.bold,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey('Fira Code'),
-                                  ),
+                        InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            GoRouter.of(context).prepareAuthEvent();
+                            await authManager.signOut();
+                            GoRouter.of(context).clearRedirectLocation();
+
+                            context.goNamedAuth('HomePage', context.mounted);
+                          },
+                          child: Text(
+                            'Sair',
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Fira Code',
+                                  color: Colors.black,
+                                  fontSize: 16.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.bold,
+                                  useGoogleFonts: GoogleFonts.asMap()
+                                      .containsKey('Fira Code'),
+                                ),
+                          ),
                         ),
                         Text(
                           'Entrar em Contato',

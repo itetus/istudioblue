@@ -1,4 +1,3 @@
-import '/components/login_component_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'home_page_widget.dart' show HomePageWidget;
 import 'package:flutter/material.dart';
@@ -19,13 +18,9 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   FocusNode? mensagemFocusNode;
   TextEditingController? mensagemTextController;
   String? Function(BuildContext, String?)? mensagemTextControllerValidator;
-  // Model for loginComponent component.
-  late LoginComponentModel loginComponentModel;
 
   @override
-  void initState(BuildContext context) {
-    loginComponentModel = createModel(context, () => LoginComponentModel());
-  }
+  void initState(BuildContext context) {}
 
   @override
   void dispose() {
@@ -37,7 +32,5 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
 
     mensagemFocusNode?.dispose();
     mensagemTextController?.dispose();
-
-    loginComponentModel.dispose();
   }
 }
