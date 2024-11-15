@@ -673,7 +673,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         0.0,
                                                                         10.0),
                                                             child: Text(
-                                                              ' Mobile (iOS e Android)',
+                                                              ' Mobile\n iOS e Android',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
